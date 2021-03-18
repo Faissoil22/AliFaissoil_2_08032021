@@ -1,0 +1,74 @@
+
+body{
+
+}
+/*---HEADER
+-------------------------------------*/
+#Logo {
+    display: flex;
+    padding-top: 20px;
+}
+nav {
+   display: flex;
+}
+nav ul {
+    display: flex;
+   }
+
+nav ul li {
+    display: inline-flex;
+    margin-left: 20px;
+    list-style-type: none;   
+}
+
+nav ul li a {
+    padding-top: 20px;
+    color: #0065FC;
+    text-decoration: none;
+}
+
+/*Moteur de recherche
+-----------------------------------*/
+.Trouver  {
+    margin-top: 10px;
+}
+
+.barderecherche {
+    display: flex;
+}
+#barderecherche i.fas.fa-map-marker-alt {
+    background-color:#0065FC;
+    border-radius: 30% 0 0 30%;
+    padding: 20px;
+    font-size: 40px;
+    height: 20px;
+
+    
+}
+
+
+.filtres * {
+    margin: top 0px;
+    display: inline;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.fas  {
+    border: 0.2rem solid #F2F2F2;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    background-color: #DEEBFF;
+}
+
+.infonombredelogements * {
+    display: inline;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+/* Section Hebergements
+--------------------------*/
+.hebergements * {
+
+}
