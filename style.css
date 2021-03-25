@@ -37,7 +37,7 @@ nav ul {
 
 nav ul li {
     display: flex;
-    margin-left: 95px;
+    margin-left: 20px;
     list-style-type: none;
     padding-left: 20px;   
 }
@@ -51,33 +51,18 @@ nav ul li a {
 a.inscription {
     font-weight: bold;
 }
-a.hebergements {
-    text-decoration-line: overline;
-}
 
-a.activites {
-    text-decoration-line: overline;
-}
 /*Moteur de recherche
 -----------------------------------*/
 .Trouver  {
-    display: inline-flex;
-    margin-left: 1rem;
-    margin-right: 20rem;
+    padding: 1em;
 }
 
-.Trouver p h3 h6 {
-    padding-top: 1em;
-    padding-left: 1rem;
+.Trouver h3 {
     font-size: 1.5em;
-    padding: 1.5em;
-    margin: 0;
-    margin-left: 1rem;
 }
 
 .barderecherche {
-    margin: 15px;
-    margin-left: 1rem;
     display: inline-flex;
     align-items: center;
     border-bottom-left-radius: 5px;
@@ -86,166 +71,99 @@ a.activites {
 
 .barderecherche i.fas.fa-map-marker-alt {
     background-color:#F2F2F2;
-    border-radius: 30px;
+    border-radius: 15px;
     border-top-width: auto;
     padding: 1.5em;
     font-size: 10px;
     height: 5px; 
     margin-right: 0px;
-    position: inherit;
-    z-index: 1;
 }
-
-.barderecherche input {
+.barderecherche button{
+    background-color:#F2F2F2;
+    border-radius: 15px;
+    padding: 1.5em;
+}
+#search {
     display: inline-flex;
-    width: 11rem;
-    border-radius: 50%;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    padding: 0.5em;
-    border: none;
-    margin-left: -1.5rem;
-    padding-left: 1.5rem;
-    margin-top: 5px;
-    height: 2rem;
-    background-color: white;
-    position: relative;
-    cursor: pointer;
-    z-index: -1;
-}
-
-.barderecherche button a {
-    color:#F2F2F2;
-}
-
-.barderecherche button {
-    border-radius: 30px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    padding: 0.5em;
-    margin-left: -0.5rem;
-    margin-top: 5px;
-    height: 2rem;
-    background-color: #0984e3;
-    border: none;
-    position: relative;
-    z-index: 1;
-}
-
-/* Les icones filtres de recherche
------------------------------------*/
-
-.filtres * {
-    margin-top: 0.5rem;
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 2rem;
-    list-style-type: none;
-}
-
-.filtres .icones {
-    margin: 0;
-    display: inline-flex;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: .4s;
-}
-
-.filtres .icones h4 {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: .5rem;
-}
-
+    border-radius: 15px;
+    border-top-width: auto;
+    background-color: #F2F2F2;
+    width: 50%;
+    padding: 1.5em;
+    font-size: 10px;
+    height: 5px; 
+    margin-left: 0px;
+    border: aliceblue;
     
-.filtres .icones a i h4 {
+}
+.search  .Rechercher {
     display: inline-flex;
+    border-radius: 15px;
+    border-top-width: auto;
+    background-color: #F2F2F2;
+    width: 50%;
+    padding: 1.5em;
+    font-size: 10px;
+    height: 5px; 
+    margin-left: 0px;
+    border: aliceblue;
+}
+
+
+.filtres *  {
+    display: inline-flex;
+    margin-left:  0.6rem;
+    margin-top: 0rem;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 5rem;
-    list-style-type: none;
+    list-style-type: none; 
 }
 
-.filtres .icones .fas {
+
+.filtres a {
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: -1rem;
-    margin-top: 0rem;
-    border: 0.09rem solid #F2F2F2;
+    margin-top: 2rem;
+    border: 0.1rem solid #F2F2F2;
     font-size: 1rem;
     border-radius: 50%;
     height: 3rem;
     width: 3rem;
+    margin-left: 9rem;
     background: #DEEBFF;
-    position: inherit;
-    z-index: 1;
-    opacity: 1;
 }
 
-.filtres .icones button {
+.filtres i {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0rem;
-    border: 0.01rem solid #F2F2F2;
-    background-color: ;
-    font-size: bold;
-    height: 3.1rem;
-    margin-left: -2rem;
-    padding-left: 1rem;
-    width: 17rem;
-    border-radius: 30px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    position: relative;
-    z-index: -1;
 }
 
-.fa-money-bill-wave-alt {
-    color: #1877f2;
-    filter: drop-shadow(0 0 10px #1877f2);
+
+.filtres button  {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 50%;
+    height: 3rem;
+    margin-left: 1rem;
+    border-top-left-radius: 80px 80px;
+    border-bottom-left-radius: 80px 80px;
+    border-top-right-radius: 80px 80px;
+    border-bottom-right-radius: 80px 80px;
+    width: 10rem;
+    border: 0.1rem solid #F2F2F2;
 }
 
-.fa-baby {
-    color: #c32aa3;
-    filter: drop-shadow(0 0 3px #c32aa3);
-  }
-  
-.fa-heart {
-    color: #25d366;
-    filter: drop-shadow(0 0 3px #25d366);
-  }
-  
-.fa-cat {
-    color: #1da1f2;
-    filter: drop-shadow(0 0 3px #1da1f2);
-  }
 .infonombredelogements {
     display: inline-flex;
-    margin: auto;
-    padding-left: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin: 3px;
 }
-
-.infonombredelogements i .fas {
+.infonombredelogements .fas .info {
     display: inline-flex;
-    border-radius: 30%;
-    height: 2rem;
-    width: 2rem;
-    padding-right: 3rem;
-    border: 0.5rem solid #706969;
-    background-color: aqua;
+    border-radius: 100%;
+    margin-left: 3px;
 }
 
-.infonombredelogements a {
-    padding-left: 1rem;
-}
 /* Section Hebergements
 --------------------------*/
 .hebergements * {
