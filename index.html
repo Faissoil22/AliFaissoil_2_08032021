@@ -9,6 +9,7 @@
     <title>Reservia</title>
     <!---liens vers le fichier css et font-->
     <link rel="stylesheet" href="style.css" />
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css”>
     <script src="https://kit.fontawesome.com/f60ea53b42.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -30,34 +31,57 @@
         </nav>
 <!--Phrase d'accroche Trouver-->
     <div class="trouver">
-        <h3>Trouver votre Hébergement pour des vacances de rêve</h3>
-        <p><h6>En plein centre ou en pleine nature</h6></p>
+        <p></p><h3>Trouver votre Hébergement pour des vacances de rêve</h3>
+        <h6>En plein centre ou en pleine nature</h6></p>
     </div>
 <!---champs de recherche de type placeholder-->
     <div class="barderecherche">
      <form>
         <label for="search"><i class="fas fa-map-marker-alt"></i></label>
         <input class="placeholder" type="search" name="search" id="search" placeholder="Marseille, France"/>
-        <button type="submit" value="Rechercher">rechercher</button>
+        <button type="submit" value="Rechercher"><a>Rechercher</a></button>
      </form>
     </div>
 <!--filtres de recherche-->
     <div class="filtres">
-        <h4>Filtres</h4>  
-        <div class="Économique">
-            <span class="">
-                <a href="#Eco">
-                    <i class="fas fa-money-bill-wave-alt"></i>
-                    <button class="Eco">Économique</button>
-                </a>
-            </span>
-        </div>
-        <div class="Familial"><span class=""><a href="#Fam"><i class="fas fa-baby"><button class="Fam">Familial</button></i></a></span></div> 
-        <div class="Romance"><span class=""><a href="#Rom"><i class="fas fa-heart"><button class="Rom">Romantique</button></i></a></span></div> 
-        <div class="Animaux"><span class=""><a href="#Animaux"><i class="fas fa-cat"><button class="Animaux">Animaux autorisés</button></i></a></span></div> 
+        <div class="icones">
+            <h4>Filtres</h4>
+            <div class="bouton">
+                <span class="">
+                    <a href="#Eco">
+                        <i class="fas fa-money-bill-wave-alt"></i>
+                        <button class="Eco">Économique</button>
+                    </a>
+                </span>
+            </div>
+            <div class="bouton">
+                <span class="">
+                    <a href="#Fam">
+                        <i class="fas fa-baby"></i>
+                        <button class="Fam">Familial</button>
+                    </a>
+                </span>
+            </div> 
+            <div class="bouton">
+                <span class="">
+                    <a href="#Rom">
+                        <i class="fas fa-heart"></i>
+                        <button class="Rom">Romantique</button>
+                    </a>
+                </span>
+            </div> 
+            <div class="bouton">
+                <span class="">
+                    <a href="#Animaux">
+                        <i class="fas fa-cat"></i>
+                        <button class="Animaux">Animaux autorisés</button>
+                    </a>
+                </span>
+            </div>
+        </div> 
     </div>
     <div class="infonombredelogements">
-        <p><i class="fas fa-info"></i><p class="nombreLogements">Plus de 500 logements sont disponibles dans cette ville</p>
+        <i class="fas fa-info"><a>Plus de 500 logements sont disponibles dans cette ville</a></i>
     </div>
     </header>
 <!----Hébergments à Marseille-->
@@ -67,7 +91,7 @@
         <div class="hebergement container">
             <div class="fongris">
                 <h3>Hébergements à Marseille</h3>
-                <div id="Suites">
+                <div class="Suites">
                     <figure>
                         <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="hebergements">
                         <figcaption>
@@ -143,7 +167,7 @@
         <p>Les plus populaires</p>
         <div class="classement"><i class="fas fa-chart-line"></i></div>
     </h3>
-    <div id="Les plus populaires">
+    <div class="Les plus populaires">
         <figure>
             <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hebergements">
             <figcaption>
