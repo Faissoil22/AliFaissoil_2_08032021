@@ -252,24 +252,24 @@ a.hebergements:hover {
 /* Section Hebergements
 --------------------------*/
 
-.hebergements {
+.hebergements  {
     display: flex;
     max-width: 1300px;
     width: 80%;
-    margin: auto auto 0;
+    margin: 70px auto 0;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.hebergements .suites .figure {
-    width: 30px;
-    height: 20px;
+.hebergements .suites  {
+    width: auto;
+    height: auto;
     margin: 10px;
     overflow: hidden;
     flex-shrink: 0;
 }
 
-.hebergements .figure .img {
-    width: 100%;
+.hebergements.img {
+    width: auto;
     height: auto;
 }
