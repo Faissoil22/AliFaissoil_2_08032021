@@ -9,6 +9,14 @@ a, a:hover {
     text-decoration: none;
     
 }
+
+button {
+    outline: none;
+}
+
+input {
+    outline: none;
+}
 body{
     font-family: "Raleway", sans-serif;
 /*margin: auto; */
@@ -62,61 +70,52 @@ a.hebergements:hover {
 }
 /*Moteur de recherche
 -----------------------------------*/
-.Trouver  {
-    display: inline-flex;
-    margin-left: 2rem;
+.trouver  {
+    margin-left: 0rem;
     margin-right: 20rem;
     padding-left: 1rem;
 }
 
-.Trouver p h3 h6 {
+.trouver p h3 h6 {
     padding-top: 1em;
     padding-left: 1rem;
     font-size: 1.5em;
     padding: 1.5em;
-    margin: 1.5rem auto;
-    margin-left: 2rem;
+    margin: 1rem auto;
 }
 
 .barderecherche {
-    margin: 15px;
-    margin-left: 1rem;
-    display: inline-flex;
     align-items: center;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 10px;
+    display: flex;
+    margin: 15px;
+    margin-left: 1rem; 
 }
 
 .barderecherche i.fas.fa-map-marker-alt {
     background-color:#F2F2F2;
-    border-radius: 30px;
+    border-radius: 30% 0 0 30%;
     border-top-width: auto;
     padding: 1.5em;
     font-size: 10px;
-    height: 5px; 
-    margin-right: 0px;
-    position: inherit;
-    z-index: 1;
+    height: 0.5rem; 
+    margin-right: -0.2rem;
+    /*position: inherit;
+    z-index: 1;*/
 }
 
 .barderecherche input {
-    display: inline-flex;
-    width: 11rem;
-    border-radius: 50%;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    /*display: flex;*/
+    width: 13rem;
     padding: 0.5em;
-    border: none;
-    margin-left: -1.5rem;
-    padding-left: 1.5rem;
+    border: 1px solid #F2F2F2;
+    margin-left: -0.2rem;
+    /*padding-left: 1.5rem;*/
     margin-top: 5px;
-    height: 2rem;
+    height: 2.3rem;
     background-color: white;
-    position: relative;
+    /*position: relative;
     cursor: pointer;
-    z-index: -1;
+    z-index: -1;*/
 }
 
 .barderecherche button a {
@@ -124,17 +123,16 @@ a.hebergements:hover {
 }
 
 .barderecherche button {
-    border-radius: 30px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-radius: 0 15% 15% 0;
+    color: white;
     padding: 0.5em;
-    margin-left: -0.5rem;
+    margin-left: -0.2rem;
     margin-top: 5px;
-    height: 2rem;
+    height: 2.2rem;
     background-color: #0984e3;
     border: none;
-    position: relative;
-    z-index: 2;
+    /*position: relative;
+    z-index: 2;*/
 }
 
 /* Les icones filtres de recherche
@@ -142,7 +140,7 @@ a.hebergements:hover {
 
 .filtres * {
     margin-top: 0.5rem;
-    display: inline-flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     margin-left: 2rem;
@@ -150,7 +148,7 @@ a.hebergements:hover {
 }
 
 .filtres .icones {
-    margin: 0;
+    margin: 1rem;
     display: inline-flex;
     cursor: pointer;
     border-radius: 50px;
@@ -198,10 +196,10 @@ a.hebergements:hover {
     border: 0.01rem solid #F2F2F2;
     background-color: ;
     font-size: bold;
-    height: 3.1rem;
+    height: 3.4rem;
     margin-left: -2rem;
     padding-left: 1rem;
-    width: 12rem;
+    width: 13rem;
     border-radius: 30px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -229,15 +227,14 @@ a.hebergements:hover {
     filter: drop-shadow(0 0 3px #1da1f2);
   }
 .infonombredelogements {
-    display: inline-flex;
-    margin: auto;
-    padding-left: 1rem;
+    display: flex;
+    margin: 1rem;
+    padding-left: 0;
     margin-top: 1rem;
     margin-bottom: 3rem;
 }
 
 .infonombredelogements i .fas {
-    display: inline-flex;
     border-radius: 30%;
     height: 2rem;
     width: 2rem;
@@ -252,23 +249,44 @@ a.hebergements:hover {
 /* Section Hebergements
 --------------------------*/
 
-.hebergements {
+ #hebergements {
     display: flex;
-    max-width: 1300px;
-    width: 80%;
-    margin: 70px auto 0;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 56px;
 }
 
-.hebergements .suites  {
+.suites {
+    background-color: #F2F2F2;
     display: flex;
-    width: 1000px;
-    height: 600px;
-    margin: 10px;
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    border-radius: 20px;
+    padding: 44px 36px 44px 36px;
+    max-width: 1300px;
+    width: 90%;
 }
 
-.hebergements .img {
-    width: 100%;
-    height: 100%;
+figure  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: 60px;
+}
+
+img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 16px;
+    object-fit: cover;
+    width: 236px;
+    height: 112px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
