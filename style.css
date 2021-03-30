@@ -257,6 +257,7 @@ a.hebergements:hover {
 
 #hebergements h3 {
     display: flex;
+    margin-bottom: auto;
 }
 
 .suites {
