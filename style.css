@@ -245,78 +245,101 @@ a.hebergements:hover {
 
  #hebergements {
     display: flex;
-    justify-content: center;
     margin-bottom: 56px;
 }
 
 #hebergements_marseille {
     display: flex;
-    margin-left: 1rem;
+    margin-left: 1.2rem;
 }
 
 .suites  {
     display: flex;
     background-color: #F2F2F2;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-content: space-between;
     border-radius: 20px;
-    padding: 44px 36px 44px 36px;
-    max-width: 1300px;
+    max-width: 900px;
     width: 90%;
-    height: auto;
 }
 
-figure * {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    margin-bottom: 5px;
-    border-radius: 20px;
+figure {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+figure p {
+    vertical-align: center;
+    justify-content: space-around;
 }
 
 img {
     display: flex;
     justify-content: space-around;
-    padding-left: 16px;
     object-fit: cover;
+    margin: 15px;
     width: 236px;
     height: 112px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
-figcaption {
-    display:flex;
-    justify-content: center;
+figcaption  {
     align-items: center;
-    padding-top: 16px;
+    padding: 10px;
     object-fit: cover;
-    align-content: space-between;
+    align-content: space-around;
+    vertical-align: center;
 }
 
-figcaption * {
+/*La colonne les plus populaires*/
+
+.les_plus_populaire .figure {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    object-fit: cover;
 }
-
-figcaption p {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: column;
-    object-fit: cover;
-    padding: auto;
-    }
-
-figcaption .fas i {
-    display: flex;
-    justify-content: center; 
-    object-fit: cover; 
-}
-
 #plus {
     display: flex;
+    margin-left: 1rem;
+}
+
+#les_plus_pop {
+    display: flex;
+    margin-left: 6rem;
+}
+
+.les_plus_populaires {
+    justify-content: space-around;
+    margin-left: 5rem;
+    padding-right: 20px;
+    width: 600px;
+}
+
+.fa-chart-line {
+    margin-left: 50px;
+}
+/*Les activités en nature*/
+
+#activites {
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.parc  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/*Le pied de page*/
+
+footer {
+    display: flex;
+    background-color: lightgray;
+    margin-top: 5px;
+    justify-content: space-around;
 }
