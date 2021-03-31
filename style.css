@@ -24,6 +24,9 @@ body{
 }
 /*---HEADER
 -------------------------------------*/
+#header {
+    margin-bottom: 2rem;
+}
 #Logo {
     display: flex;
     color: unset;
@@ -99,23 +102,16 @@ a.hebergements:hover {
     font-size: 10px;
     height: 0.5rem; 
     margin-right: -0.2rem;
-    /*position: inherit;
-    z-index: 1;*/
 }
 
 .barderecherche input {
-    /*display: flex;*/
     width: 13rem;
     padding: 0.5em;
     border: 1px solid #F2F2F2;
     margin-left: -0.2rem;
-    /*padding-left: 1.5rem;*/
     margin-top: 5px;
     height: 2.3rem;
     background-color: white;
-    /*position: relative;
-    cursor: pointer;
-    z-index: -1;*/
 }
 
 .barderecherche button a {
@@ -131,8 +127,6 @@ a.hebergements:hover {
     height: 2.2rem;
     background-color: #0984e3;
     border: none;
-    /*position: relative;
-    z-index: 2;*/
 }
 
 /* Les icones filtres de recherche
@@ -255,12 +249,12 @@ a.hebergements:hover {
     margin-bottom: 56px;
 }
 
-#hebergements h3 {
+#hebergements_marseille {
     display: flex;
-    margin-bottom: auto;
+    margin-left: 1rem;
 }
 
-.suites {
+.suites  {
     display: flex;
     background-color: #F2F2F2;
     flex-wrap: wrap;
@@ -270,13 +264,15 @@ a.hebergements:hover {
     padding: 44px 36px 44px 36px;
     max-width: 1300px;
     width: 90%;
+    height: auto;
 }
 
-figure  {
+figure * {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 5px;
     border-radius: 20px;
 }
 
@@ -289,4 +285,38 @@ img {
     height: 112px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+figcaption {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    object-fit: cover;
+    align-content: space-between;
+}
+
+figcaption * {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    object-fit: cover;
+}
+
+figcaption p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: column;
+    object-fit: cover;
+    padding: auto;
+    }
+
+figcaption .fas i {
+    display: flex;
+    justify-content: center; 
+    object-fit: cover; 
+}
+
+#plus {
+    display: flex;
 }
