@@ -245,37 +245,40 @@ a.hebergements:hover {
 
  #hebergements {
     display: flex;
-    margin-bottom: 56px;
-}
-
-#hebergements_marseille {
-    display: flex;
-    margin-left: 1.2rem;
 }
 
 .suites  {
     display: flex;
     background-color: #F2F2F2;
     flex-wrap: wrap;
-    align-content: space-between;
     border-radius: 20px;
+    margin-left: 1.2rem;
+    margin-top: auto;
     max-width: 900px;
-    width: 90%;
+    width: 60%;
 }
 
-figure {
+#titre_heberg h3 {
+    margin-left: 1.5rem;
+}
+.heberg {
+    display: flex;
+    object-fit: cover;
+    flex-wrap: wrap;
+}
+.heberg figure {
     margin-left: 1rem;
     margin-top: 1rem;
     border-radius: 15px;
     background-color: #fff;
 }
 
-figure p {
+.heberg figure p {
     vertical-align: center;
     justify-content: space-around;
 }
 
-img {
+.heberg figure img {
     display: flex;
     justify-content: space-around;
     object-fit: cover;
@@ -286,7 +289,7 @@ img {
     border-top-right-radius: 15px;
 }
 
-figcaption  {
+.heberg figcaption  {
     align-items: center;
     padding: 10px;
     object-fit: cover;
@@ -296,34 +299,84 @@ figcaption  {
 
 /*La colonne les plus populaires*/
 
-.les_plus_populaire .figure {
+.les_plus_populaires {
+    margin-left: 3rem;
     display: flex;
+    background-color: #F2F2F2;
+    flex-wrap: wrap;
+    align-content: space-between;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
 }
+
+.pop {
+    object-fit: cover;
+    flex-wrap: wrap;
+    height: 600px;
+    justify-content: space-around;
+}
+
+#les_plus_pop  {
+    display: flex;
+    padding-left: 1.2rem;
+    padding-right: 3rem;
+}
+
+#les_plus_pop .fa-chart-line{
+    padding-left: 15rem;
+}
+
+.pop figure  {
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    max-width: 400px;
+    border-radius: 15px;
+    background-color: #fff;
+    margin: 2rem;
+    justify-content: space-around;
+}
+
+.pop figure p {
+    vertical-align: center;
+    justify-content: space-around;
+}
+
+.pop figure img {
+    justify-content: space-around;
+    object-fit: cover;
+    margin: 15px;
+    width: 236px;
+    height: 112px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.pop figcaption  {
+    align-items: center;
+    padding: 10px;
+    object-fit: cover;
+    align-content: space-around;
+    vertical-align: middle;
+}
+
 #plus {
     display: flex;
     margin-left: 1rem;
+    margin-top: 5rem;
 }
 
-#les_plus_pop {
-    display: flex;
-    margin-left: 6rem;
-}
 
-.les_plus_populaires {
-    justify-content: space-around;
-    margin-left: 5rem;
-    padding-right: 20px;
-    width: 600px;
-}
 
-.fa-chart-line {
-    margin-left: 50px;
-}
 /*Les activités en nature*/
+
+#activites_marseille h3 {
+    padding: 3rem;
+}
 
 #activites {
     display: flex;
-    margin-bottom: 56px;
 }
 
 .parc  {
@@ -335,11 +388,24 @@ figcaption  {
     width: 100%;
 }
 
+.parc img {
+    justify-content: space-around;
+    margin: 15px;
+    width: 236px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
 /*Le pied de page*/
 
 footer {
     display: flex;
-    background-color: lightgray;
+    background-color: #F2F2F2;
+    margin-left: 1rem;
     margin-top: 5px;
     justify-content: space-around;
+}
+
+#footer {
+    display: flex-start;
+    margin-left: 1rem;
 }
