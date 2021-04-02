@@ -62,9 +62,15 @@ nav ul li a {
 a.inscription {
     font-weight: bold;
 }
-a.hebergements:hover {
-    border-color: #0065FC;
-    color: #0065FC;
+nav .hebergement-btn {
+    border-width:2px;    
+    border-top-style:solid;
+    border-top-color: #0065FC;
+    -webkit-transition: all 0.5s ease;                  
+    -moz-transition: all 0.5s ease;                 
+    -o-transition: all 0.5s ease;   
+    -ms-transition: all 0.5s ease;          
+    transition: all 0.5s ease;
 }
 
 .activites:hover {
@@ -320,11 +326,10 @@ a.hebergements:hover {
 #les_plus_pop  {
     display: flex;
     padding-left: 1.2rem;
-    padding-right: 3rem;
 }
 
-#les_plus_pop .fa-chart-line{
-    padding-left: 15rem;
+#les_plus_pop h3 {
+    margin-right: 15rem;
 }
 
 .pop figure  {
@@ -361,6 +366,10 @@ a.hebergements:hover {
     vertical-align: middle;
 }
 
+.pop .etoiles {
+    padding-top: 3rem;
+}
+
 #plus {
     display: flex;
     margin-left: 1rem;
@@ -372,11 +381,22 @@ a.hebergements:hover {
 /*Les activités en nature*/
 
 #activites_marseille h3 {
-    padding: 3rem;
+    padding-top: 3rem;
+    margin-left: 1.2rem;
 }
 
 #activites {
     display: flex;
+}
+.activites_nature {
+    margin-left: 3rem;
+    display: flex;
+    background-color: #fff;
+    flex-wrap: wrap;
+    align-content: space-between;
+    border-radius: 20px;
+    max-width: 1500px;
+    
 }
 
 .parc  {
@@ -397,15 +417,12 @@ a.hebergements:hover {
 }
 /*Le pied de page*/
 
-footer {
+.footer {
     display: flex;
     background-color: #F2F2F2;
-    margin-left: 1rem;
     margin-top: 5px;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
 }
 
-#footer {
-    display: flex-start;
-    margin-left: 1rem;
-}
