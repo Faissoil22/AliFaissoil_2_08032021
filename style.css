@@ -227,7 +227,7 @@ nav .hebergement-btn {
     color: #1877f2;
   }
 
-div.infonombredelogements {
+.infonombredelogements {
     display: flex;
     margin: 1rem;
 }
