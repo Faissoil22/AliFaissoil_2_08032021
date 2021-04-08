@@ -17,46 +17,46 @@ button {
 input {
     outline: none;
 }
-body{
+body {
     font-family: "Raleway", sans-serif;
-/*margin: auto; */
+    margin: auto; 
     padding: 0;
 }
 /*---HEADER
 -------------------------------------*/
 #header {
-    margin-bottom: 2rem;
-}
-#Logo {
     display: flex;
-    color: unset;
-    cursor: pointer;
+    margin-bottom: 2rem;
+    flex:100%
+}
+.logo {
+    margin-left: 1rem;
     padding-top: 20px;
 }
 nav {
    display: flex;
    justify-content: space-between;
-   align-items: center;
    height: 80px;
-   padding: 1em;
 }
 nav ul {
     display: flex;
-    flex-flow: row;
-    margin-left: auto;
+    padding-left: 40rem;;
    }
 
 nav ul li {
     display: flex;
     margin-left: 95px;
-    list-style-type: none;
     padding-left: 20px;   
 }
 
-nav ul li a {
+
+nav ul li a  {
     padding-top: 20px;
     color: #0065FC;
-    text-decoration: none;
+}
+
+li.activites-btn a {
+    color: #000000;
 }
 
 a.inscription {
@@ -125,7 +125,7 @@ nav .hebergement-btn {
 }
 
 .barderecherche button {
-    border-radius: 0 15% 15% 0;
+    border-radius: 0 0.7rem 0.7rem 0;
     color: white;
     padding: 0.5em;
     margin-left: -0.2rem;
@@ -141,22 +141,17 @@ nav .hebergement-btn {
 .filtres * {
     margin-top: 0.5rem;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin-left: 2rem;
+    margin-left: 0.5rem;
     list-style-type: none;
 }
 
 .filtres .icones {
-    margin: 1rem;
-    display: inline-flex;
-    cursor: pointer;
     border-radius: 50px;
     transition: .4s;
 }
 
 .filtres .icones h4 {
-    display: inline-flex;
     justify-content: center;
     align-items: center;
     margin-left: .5rem;
@@ -183,9 +178,6 @@ nav .hebergement-btn {
     height: 3rem;
     width: 3rem;
     background: #DEEBFF;
-    position: inherit;
-    z-index: 1;
-    opacity: 1;
 }
 
 .filtres .icones button {
@@ -194,7 +186,6 @@ nav .hebergement-btn {
     align-items: center;
     margin-top: 0rem;
     border: 0.01rem solid #F2F2F2;
-    background-color: ;
     font-size: bold;
     height: 3.4rem;
     margin-left: -2rem;
@@ -226,24 +217,34 @@ nav .hebergement-btn {
     color: #1da1f2;
     filter: drop-shadow(0 0 3px #1da1f2);
   }
-.infonombredelogements {
+
+  .fa-info {
+    color: #1da1f2;
+  }
+
+  .fa-star {
+    color: #1877f2;
+  }
+
+div.infonombredelogements {
     display: flex;
     margin: 1rem;
-    padding-left: 0;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
 }
 
-.infonombredelogements i .fas {
-    border-radius: 30%;
+div.infonombredelogements .fas {
     height: 2rem;
     width: 2rem;
-    padding-right: 3rem;
-    border: 0.5rem solid #706969;
-    background-color: aqua;
+    min-height: 2rem;
+    min-width: 2rem;
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
 }
 
-.infonombredelogements a {
+div.infonombredelogements a {
     padding-left: 1rem;
 }
 /* Section Hebergements
@@ -251,6 +252,7 @@ nav .hebergement-btn {
 
  #hebergements {
     display: flex;
+    width: 100%;
 }
 
 .suites  {
@@ -259,20 +261,22 @@ nav .hebergement-btn {
     flex-wrap: wrap;
     border-radius: 20px;
     margin-left: 1.2rem;
-    margin-top: auto;
     max-width: 900px;
     width: 60%;
 }
 
 #titre_heberg h3 {
     margin-left: 1.5rem;
+    padding-top: 2rem;
 }
+
 .heberg {
     display: flex;
     object-fit: cover;
     flex-wrap: wrap;
 }
 .heberg figure {
+    width: 30%;
     margin-left: 1rem;
     margin-top: 1rem;
     border-radius: 15px;
@@ -284,12 +288,12 @@ nav .hebergement-btn {
     justify-content: space-around;
 }
 
-.heberg figure img {
+.heberg img {
     display: flex;
     justify-content: space-around;
     object-fit: cover;
-    margin: 15px;
-    width: 236px;
+    margin-left: 5px;
+    width: 96%;
     height: 112px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -313,19 +317,17 @@ nav .hebergement-btn {
     align-content: space-between;
     border-radius: 20px;
     max-width: 500px;
-    width: 90%;
 }
 
 .pop {
     object-fit: cover;
     flex-wrap: wrap;
-    height: 600px;
-    justify-content: space-around;
 }
 
-#les_plus_pop  {
+#les_plus_pop {
     display: flex;
     padding-left: 1.2rem;
+    padding-top: 2rem;
 }
 
 #les_plus_pop h3 {
@@ -348,22 +350,20 @@ nav .hebergement-btn {
     justify-content: space-around;
 }
 
-.pop figure img {
+.pop img {
     justify-content: space-around;
     object-fit: cover;
     margin: 15px;
-    width: 236px;
+    width: 50%;
     height: 112px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
 .pop figcaption  {
-    align-items: center;
-    padding: 10px;
-    object-fit: cover;
-    align-content: space-around;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .pop .etoiles {
@@ -376,53 +376,85 @@ nav .hebergement-btn {
     margin-top: 5rem;
 }
 
-
-
 /*Les activités en nature*/
-
-#activites_marseille h3 {
+#titre_activites h3 {
     padding-top: 3rem;
-    margin-left: 1.2rem;
+    margin-left: 0.5rem;
 }
-
-#activites {
-    display: flex;
+.parc {
+   width: 100%;
+   margin: 1rem;
 }
-.activites_nature {
-    margin-left: 3rem;
+figure.nature  {
     display: flex;
-    background-color: #fff;
-    flex-wrap: wrap;
-    align-content: space-between;
-    border-radius: 20px;
-    max-width: 1500px;
-    
-}
-
-.parc  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    max-width: 1000px;
     width: 100%;
+    justify-content: space-between;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
-.parc img {
+figure.nature figure {
+    width: 22%;
+    height: 500px;
+    margin-top: 1rem;
+    border: 1px;
+    border-radius: 15px;
+    background-color: #f5efef;
+}
+
+.figure.nature p {
+    vertical-align: center;
     justify-content: space-around;
-    margin: 15px;
-    width: 236px;
+    padding: 13px;
+}
+
+figure.nature img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+div.colonne {
+    width: 22%;
+    height: 245px;
+}
+div.colonne figure {
+    width: 100%;
+    height: 240px;
+    margin-top: 1rem;
+    border: 1px;
+    border-radius: 15px;
+    background-color: #f5efef;
+}
+
+div.colonne img {
+    width: 100%;
+    height: 68%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+figure.nature p {
+    padding-top: 1.7rem;
+    margin-left: 1rem;
 }
 /*Le pied de page*/
 
 .footer {
     display: flex;
-    background-color: #F2F2F2;
-    margin-top: 5px;
     justify-content: space-between;
-    margin-left: 1.2rem;
-    margin-right: 1.2rem;
+    max-width: 100%;
+    width: 1440px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+ul.liens {
+    padding-top: 1.5rem;
+    align-content: space-between;
+
 }
 

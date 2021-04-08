@@ -41,7 +41,7 @@
     <div class="barderecherche">
      <form>
         <label for="search"><i class="fas fa-map-marker-alt"></i></label>
-        <input class="placeholder" type="search" name="search" id="search" placeholder="Marseille, France"/>
+        <input class="placeholder" type="search" name="search" id="search" placeholder="Marseille, France">
         <button type="submit" value="Rechercher"><a>Rechercher</a></button>
      </form>
     </div>
@@ -53,7 +53,7 @@
                 <span class="">
                     <a href="#Eco">
                         <i class="fas fa-money-bill-wave-alt"></i>
-                        <button class="Eco">Économique</button>
+                        <button class="Eco"><strong>Économique</strong></button>
                     </a>
                 </span>
             </div>
@@ -61,7 +61,7 @@
                 <span class="">
                     <a href="#Fam">
                         <i class="fas fa-baby"></i>
-                        <button class="Fam">Familial</button>
+                        <button class="Fam"><strong>Familial</strong></button>
                     </a>
                 </span>
             </div> 
@@ -83,10 +83,10 @@
             </div>
         </div> 
     </div>
-    <div class="infonombredelogements">
-        <i class="fas fa-info"><a>Plus de 500 logements sont disponibles dans cette ville</a></i>
-    </div>
     </section>
+    <div class="infonombredelogements"><i class="fas fa-info"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p></i>
+    </div>
 <!----Hébergments à Marseille-->
     <section id="hebergements">
         <div class="suites"> 
@@ -160,8 +160,8 @@
                             <div class="etoiles"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas-fa-star"></i><i class="fas fa-star"></i></div>
                         </figcaption>
                 </figure>
-                    <p><div id="plus"><a href="#hebergements"><strong>Afficher Plus</strong></a></div></p>
             </figure>
+            <p><div id="plus"><a href="#hebergements"><strong>Afficher Plus</strong></a></div></p>
         </div>
         <aside>
             <div class="les_plus_populaires">
@@ -218,30 +218,37 @@
         </aside>
     </section>
 <!-----Activites à Marseille-->
-    <section id="activites">
-        <figure class="activites_nature">
+    <section id="activites">  
             <div class="parc">
-                <div id="activites_marseille"><h3>Activités à Marseille</h3></div>
-                <figure>
-                    <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="activites">
-                        <figcaption>
-                            <p>
-                                <strong>
-                                    Vieux Port
-                                </strong>
-                            </p>
-                        </figcaption>
-                </figure>
-                <figure>
-                    <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="activites">
-                        <figcaption>
-                            <p>
-                                <strong>
-                                    Fort de Pomègues
-                                </strong>
-                            </p>
-                        </figcaption>
-                </figure>
+                <div id="titre_activites">
+                    <p>
+                        <h3>
+                            Activités à Marseille
+                        </h3>
+                    </p>
+                </div>
+                <figure class="nature">
+                    <figure>
+                        <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="activites">
+                            <figcaption>
+                                <p>
+                                    <strong>
+                                        Vieux Port
+                                    </strong>
+                                </p>
+                            </figcaption>
+                    </figure>
+                    <div class="colonne">
+                        <figure>
+                            <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="activites">
+                                <figcaption>
+                                    <p>
+                                        <strong>
+                                            Fort de Pomègues
+                                        </strong>
+                                    </p>
+                                </figcaption>
+                        </figure>
                         <figure>
                             <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="activites">
                             <figcaption>
@@ -252,16 +259,18 @@
                                 </p>
                             </figcaption>
                         </figure>
-                        <figure>
-                            <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="activites">
-                            <figcaption>
-                                <p>
-                                    <strong>
-                                        Parc national des Calanques
-                                    </strong>
-                                </p>
-                            </figcaption>
-                        </figure>
+                    </div>
+                    <figure>
+                        <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="activites">
+                        <figcaption>
+                            <p>
+                                <strong>
+                                    Parc national des Calanques
+                                </strong>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <div class="colonne">
                         <figure>
                             <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="activites">
                             <figcaption>
@@ -282,9 +291,9 @@
                                 </p>
                             </figcaption>
                         </figure>
+                    </div>    
                 </figure>
-            </div>
-        </figure>            
+            </div>          
     </section>
 </main> 
 <!---Footer--> 
