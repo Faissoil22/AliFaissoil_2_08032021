@@ -5,6 +5,7 @@
     list-style: none;
 }
 
+
 a, a:hover {
     text-decoration: none;
     
@@ -231,7 +232,7 @@ div.infonombredelogements {
     margin: 1rem;
 }
 
-div.infonombredelogements .fas {
+.infonombredelogements .fas {
     height: 2rem;
     width: 2rem;
     min-height: 2rem;
@@ -244,7 +245,8 @@ div.infonombredelogements .fas {
     margin-right: 1rem;
 }
 
-div.infonombredelogements a {
+.infonombredelogements a {
+    flex: 1;
     padding-left: 1rem;
 }
 /* Section Hebergements
@@ -262,7 +264,7 @@ div.infonombredelogements a {
     border-radius: 20px;
     margin-left: 1.2rem;
     max-width: 900px;
-    width: 60%;
+    width: 75%;
 }
 
 #titre_heberg h3 {
@@ -363,7 +365,7 @@ div.infonombredelogements a {
 .pop figcaption  {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
 }
 
 .pop .etoiles {
@@ -383,7 +385,7 @@ div.infonombredelogements a {
 }
 .parc {
    width: 100%;
-   margin: 1rem;
+   margin: 0.5rem;
 }
 figure.nature  {
     display: flex;
@@ -394,7 +396,7 @@ figure.nature  {
 }
 
 figure.nature figure {
-    width: 22%;
+    width: 23%;
     height: 500px;
     margin-top: 1rem;
     border: 1px;
@@ -417,7 +419,7 @@ figure.nature img {
 }
 
 div.colonne {
-    width: 22%;
+    width: 23%;
     height: 245px;
 }
 div.colonne figure {
@@ -455,6 +457,5 @@ figure.nature p {
 ul.liens {
     padding-top: 1.5rem;
     align-content: space-between;
-
 }
 
