@@ -27,7 +27,7 @@ body {
 -------------------------------------*/
 #header {
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     flex:100%
 }
 .logo {
@@ -41,7 +41,7 @@ nav {
 }
 nav ul {
     display: flex;
-    padding-left: 40rem;;
+    padding-left: 47rem;;
    }
 
 nav ul li {
@@ -82,7 +82,6 @@ nav .hebergement-btn {
 -----------------------------------*/
 .trouver  {
     margin-left: 0rem;
-    margin-right: 20rem;
     padding-left: 1rem;
 }
 
@@ -230,6 +229,7 @@ nav .hebergement-btn {
 .infonombredelogements {
     display: flex;
     margin: 1rem;
+    margin-top: 2rem;
 }
 
 .infonombredelogements .fas {
@@ -245,9 +245,10 @@ nav .hebergement-btn {
     margin-right: 1rem;
 }
 
-.infonombredelogements a {
+.infonombredelogements p {
     flex: 1;
-    padding-left: 1rem;
+    margin: 0.5rem;
+    padding-left: 0.2rem;
 }
 /* Section Hebergements
 --------------------------*/
@@ -258,13 +259,14 @@ nav .hebergement-btn {
 }
 
 .suites  {
+    flex: 70%;
     display: flex;
     background-color: #F2F2F2;
     flex-wrap: wrap;
     border-radius: 20px;
     margin-left: 1.2rem;
-    max-width: 900px;
-    width: 75%;
+    max-width: 1048px;
+    width: 70%;
 }
 
 #titre_heberg h3 {
@@ -294,7 +296,7 @@ nav .hebergement-btn {
     display: flex;
     justify-content: space-around;
     object-fit: cover;
-    margin-left: 5px;
+    margin: 5px;
     width: 96%;
     height: 112px;
     border-top-left-radius: 15px;
@@ -311,17 +313,23 @@ nav .hebergement-btn {
 
 /*La colonne les plus populaires*/
 
+aside {
+    flex: 30%;
+}
+
 .les_plus_populaires {
+    flex: 30%;
     margin-left: 3rem;
     display: flex;
     background-color: #F2F2F2;
     flex-wrap: wrap;
     align-content: space-between;
     border-radius: 20px;
-    max-width: 500px;
+    max-width: 450px;
 }
 
 .pop {
+    flex: 30%;
     object-fit: cover;
     flex-wrap: wrap;
 }
@@ -333,7 +341,7 @@ nav .hebergement-btn {
 }
 
 #les_plus_pop h3 {
-    margin-right: 15rem;
+    padding-right: 8rem;
 }
 
 .pop figure  {
@@ -341,6 +349,7 @@ nav .hebergement-btn {
     margin-left: 1rem;
     margin-top: 1rem;
     max-width: 400px;
+    height: 116px;
     border-radius: 15px;
     background-color: #fff;
     margin: 2rem;
@@ -353,10 +362,9 @@ nav .hebergement-btn {
 }
 
 .pop img {
-    justify-content: space-around;
     object-fit: cover;
-    margin: 15px;
     width: 50%;
+    margin: 2px;
     height: 112px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -365,43 +373,43 @@ nav .hebergement-btn {
 .pop figcaption  {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 50%;
+}
+.pop strong {
+    display: flex;
 }
 
 .pop .etoiles {
-    padding-top: 3rem;
+    padding-top: 1.15rem;
 }
 
 #plus {
     display: flex;
     margin-left: 1rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 /*Les activités en nature*/
+
+#activites {
+    display: flex;
+    margin-top: 0.2rem;
+}
+
 #titre_activites h3 {
-    padding-top: 3rem;
+    padding-top: 1.5rem;
     margin-left: 0.5rem;
 }
 .parc {
-   width: 100%;
-   margin: 0.5rem;
-}
-figure.nature  {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    flex: 100%;
 }
 
-figure.nature figure {
-    width: 23%;
-    height: 500px;
-    margin-top: 1rem;
-    border: 1px;
-    border-radius: 15px;
-    background-color: #f5efef;
+figure.nature  {
+    display: flex;
+    flex: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 5px;
 }
 
 .figure.nature p {
@@ -412,28 +420,6 @@ figure.nature figure {
 
 figure.nature img {
     width: 100%;
-    height: 85%;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-div.colonne {
-    width: 23%;
-    height: 245px;
-}
-div.colonne figure {
-    width: 100%;
-    height: 240px;
-    margin-top: 1rem;
-    border: 1px;
-    border-radius: 15px;
-    background-color: #f5efef;
-}
-
-div.colonne img {
-    width: 100%;
-    height: 68%;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -443,19 +429,101 @@ figure.nature p {
     padding-top: 1.7rem;
     margin-left: 1rem;
 }
+
+.image_1 {
+    flex: 25%;
+    max-width: 25%;
+    height: 350px;
+    padding: 0 4px;
+}
+
+.image_1 figure  {
+    flex: 25%;
+    height: 350px;
+    margin-top: 1rem;
+    border: 1px;
+    border-radius: 15px;
+    background-color: #f5efef;
+}
+
+.image_1 img {
+    width: 100%;
+    height: 85%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.image_2 {
+    flex: 25%;
+    max-width: 25%;
+    height: 350px;
+    padding: 0 4px;
+}
+
+.image_2 img {
+    width: 100%;
+    height: 85%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.image_2 figure  {
+    flex: 25%;
+    max-width: 100%;
+    height: 350px;
+    margin-top: 1rem;
+    border: 1px;
+    border-radius: 15px;
+    background-color: #f5efef;
+}
+
+.colonne {
+    flex: 25%;
+    height: 350px;
+    max-width: 25%;  
+    padding: 0 4px;
+}
+
+.colonne figure {
+    flex-wrap: wrap;
+    height: 167px;
+    margin-top: 1rem;
+    border: 1px;
+    border-radius: 15px;
+    background-color: #f5efef;
+}
+
+.colonne img {
+    width: 100%;
+    height: 70%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
 /*Le pied de page*/
 
 .footer {
     display: flex;
     justify-content: space-between;
     max-width: 100%;
-    width: 1440px;
+    width: 1498px;
     padding: 1rem;
+    margin-top: 3rem;
     box-sizing: border-box;
 }
 
-ul.liens {
+.liens {
     padding-top: 1.5rem;
-    align-content: space-between;
+}
+
+.footer li {
+    padding-bottom: 1.2rem;
+}
+
+@media screen and (max-width: 1498px) {
+    body main footer #header #herbergements #activites footer {
+        flex: 50%;
+        max-width: 50%;
+    }
 }
 
