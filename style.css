@@ -26,7 +26,6 @@ body {
 /*---HEADER
 -------------------------------------*/
 #header {
-    display: flex;
     margin-bottom: 1.5rem;
     flex:100%
 }
@@ -41,7 +40,7 @@ nav {
 }
 nav ul {
     display: flex;
-    padding-left: 47rem;;
+    justify-content: flex-end;
    }
 
 nav ul li {
@@ -139,14 +138,14 @@ nav .hebergement-btn {
 -----------------------------------*/
 
 .filtres * {
-    margin-top: 0.5rem;
     display: flex;
-    align-items: center;
+    margin-top: 0.5rem;
     margin-left: 0.5rem;
-    list-style-type: none;
 }
 
-.filtres .icones {
+.icones {
+    flex: 70%;
+    flex-wrap: wrap;
     border-radius: 50px;
     transition: .4s;
 }
@@ -265,8 +264,8 @@ nav .hebergement-btn {
     flex-wrap: wrap;
     border-radius: 20px;
     margin-left: 1.2rem;
-    max-width: 1048px;
-    width: 70%;
+    /*max-width: 1048px;*/
+    /* width: 70%; */
 }
 
 #titre_heberg h3 {
@@ -281,6 +280,7 @@ nav .hebergement-btn {
 }
 .heberg figure {
     width: 30%;
+    min-width: 310.73px;
     margin-left: 1rem;
     margin-top: 1rem;
     border-radius: 15px;
@@ -298,6 +298,7 @@ nav .hebergement-btn {
     object-fit: cover;
     margin: 5px;
     width: 96%;
+    min-width: 298.3px;
     height: 112px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -325,7 +326,7 @@ aside {
     flex-wrap: wrap;
     align-content: space-between;
     border-radius: 20px;
-    max-width: 450px;
+    /*max-width: 450px;*/
 }
 
 .pop {
@@ -348,7 +349,8 @@ aside {
     display: flex;
     margin-left: 1rem;
     margin-top: 1rem;
-    max-width: 400px;
+    min-width: 331.93px;
+    /*max-width: 400px;*/
     height: 116px;
     border-radius: 15px;
     background-color: #fff;
@@ -364,6 +366,7 @@ aside {
 .pop img {
     object-fit: cover;
     width: 50%;
+    min-width: 165.96px;
     margin: 2px;
     height: 112px;
     border-top-left-radius: 15px;
@@ -407,7 +410,7 @@ aside {
 figure.nature  {
     display: flex;
     flex: 100%;
-    max-width: 100%;
+    /*max-width: 100%;*/
     box-sizing: border-box;
     padding: 0 5px;
 }
@@ -432,13 +435,14 @@ figure.nature p {
 
 .image_1 {
     flex: 25%;
-    max-width: 25%;
+    /*max-width: 25%;*/
     height: 350px;
     padding: 0 4px;
 }
 
 .image_1 figure  {
     flex: 25%;
+    max-width: 364.24px;
     height: 350px;
     margin-top: 1rem;
     border: 1px;
@@ -447,7 +451,7 @@ figure.nature p {
 }
 
 .image_1 img {
-    width: 100%;
+    max-width: 364.24px;
     height: 85%;
     vertical-align: middle;
     object-fit: cover;
@@ -455,13 +459,14 @@ figure.nature p {
 
 .image_2 {
     flex: 25%;
-    max-width: 25%;
+    /* max-width: 25%; */
     height: 350px;
     padding: 0 4px;
 }
 
 .image_2 img {
     width: 100%;
+    max-width: 364.24px;
     height: 85%;
     vertical-align: middle;
     object-fit: cover;
@@ -469,7 +474,8 @@ figure.nature p {
 
 .image_2 figure  {
     flex: 25%;
-    max-width: 100%;
+    max-width: 364.24px;
+    /* max-width: 100%; */
     height: 350px;
     margin-top: 1rem;
     border: 1px;
@@ -480,11 +486,12 @@ figure.nature p {
 .colonne {
     flex: 25%;
     height: 350px;
-    max-width: 25%;  
+    /* max-width: 25%;   */
     padding: 0 4px;
 }
 
 .colonne figure {
+    max-width: 364.24px;
     flex-wrap: wrap;
     height: 167px;
     margin-top: 1rem;
@@ -494,6 +501,7 @@ figure.nature p {
 }
 
 .colonne img {
+    max-width: 364.24px;
     width: 100%;
     height: 70%;
     vertical-align: middle;
@@ -505,8 +513,8 @@ figure.nature p {
 .footer {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
-    width: 1498px;
+    /*max-width: 100%;*/
+    width: 100%;
     padding: 1rem;
     margin-top: 3rem;
     box-sizing: border-box;
@@ -520,10 +528,31 @@ figure.nature p {
     padding-bottom: 1.2rem;
 }
 
-@media screen and (max-width: 1498px) {
-    body main footer #header #herbergements #activites footer {
-        flex: 50%;
-        max-width: 50%;
-    }
-}
+/*Mobile------*/
 
+@media screen and (max-width: 768px) {
+   #hebergements {
+        flex: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .suites {
+         flex: 100%;
+         display: row;
+         flex-direction: column;
+         gap: 20px;
+     }
+ } 
+
+ @media screen and (max-width: 768px) {
+    figure.nature {
+         flex: 100%;
+         display: row;
+         flex-direction: column;
+         gap: 20px;
+     }
+ } 
