@@ -342,7 +342,11 @@ aside {
 }
 
 #les_plus_pop h3 {
-    padding-right: 8rem;
+    justify-content: flex-start;
+}
+
+.fas.fa-chart-line {
+    padding-left: 9rem;
 }
 
 .pop figure  {
@@ -530,29 +534,295 @@ figure.nature p {
 
 /*Mobile------*/
 
+/*screen max 736px*/
+
+@media screen and (max-width: 768px) {
+ 
+
 @media screen and (max-width: 768px) {
    #hebergements {
+        align-items: center;
         flex: 100%;
-        display: flex;
         flex-direction: column-reverse;
+        width: 100%;
+        min-width: 500px;
         gap: 20px;
     }
 } 
 
 @media screen and (max-width: 768px) {
     .suites {
+         align-items: center;
          flex: 100%;
-         display: row;
+         display: flex;
          flex-direction: column;
+         width: 100%;
+         gap: 20px;
+     }
+ } 
+
+@media screen and (max-width: 768px) {
+   figure.heberg  {
+         align-items: center;
+         flex: 100%;
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         gap: 20px;
+     }
+ } 
+
+ @media screen and (max-width: 768px) {
+    aside {
+         align-items: center;
+         flex: 100%;
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         gap: 20px;
+     }
+ } 
+
+ @media screen and (max-width: 768px) {
+    .les_plus_populaires {
+         align-items: center;
+         display: flex;
+         flex: 100%;
+         flex-direction: column;
+         width: 100%;
+         gap: 20px;
+     }
+ } 
+
+ @media screen and (max-width: 768px) {
+    figure.pop {
+         align-items: center;
+         display: flex;
+         flex: 100%;
+         flex-direction: column;
+         width: 100%;
+         gap: 20px;
+     }
+ } 
+
+ @media screen and (max-width: 768px) {
+    #activités { 
+         align-items: center;
+         display: flex;
+         flex: 100%;
+         flex-direction: column;
+         width: 100%;
+         gap: 20px;
+     }
+ } 
+
+ @media screen and (max-width: 768px) {
+    .parc {
+         align-items: center;
+         display: flex;
+         flex: 100%;
+         flex-direction: column;
+         width: 100%;
          gap: 20px;
      }
  } 
 
  @media screen and (max-width: 768px) {
     figure.nature {
+         align-items: center;
+         display: flex;
          flex: 100%;
-         display: row;
          flex-direction: column;
+         width: 100%;
          gap: 20px;
      }
  } 
+
+@media screen and (max-width: 768px) {
+    .footer {
+         flex-direction: column;
+         flex: 100%;
+         width: 100%;
+         gap: 20px;
+    } 
+}
+
+
+/*screen min 736px max 1024px*/
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #hebergements {
+         align-items: center;
+         flex: 100%;
+         flex-direction: column-reverse;
+         gap: 20px;
+     }
+ } 
+ 
+ @media screen and (min-width: 769px) and (max-width: 1024px) {
+     .suites {
+          align-items: center;
+          flex: 100%;
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+      }
+  } 
+ 
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    figure.heberg  {
+          align-items: center;
+          flex: 100%;
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+      }
+  } 
+ 
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+     aside {
+          align-items: center;
+          flex: 100%;
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+      }
+  } 
+ 
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+     .les_plus_populaires {
+          align-items: center;
+          display: flex;
+          flex: 100%;
+          flex-direction: row;
+          gap: 20px;
+      }
+  } 
+ 
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+     figure.pop {
+          align-items: center;
+          display: flex;
+          flex: 100%;
+          flex-direction: row;
+          gap: 20px;
+      }
+  } 
+ 
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+     #activités { 
+          align-items: center;
+          display: flex;
+          flex: 100%;
+          flex-direction: row;
+          gap: 20px;
+      }
+  } 
+ 
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+     .parc {
+          align-items: center;
+          display: flex;
+          flex: 100%;
+          flex-direction: row;
+          gap: 20px;
+      }
+  } 
+ 
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+     figure.nature {
+          align-items: center;
+          display: flex;
+          flex: 100%;
+          flex-direction: row;
+          gap: 20px;
+      }
+  } 
+ 
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+     .footer {
+          flex-direction: column;
+          flex: 100%;
+          flex-direction: row;
+          gap: 20px;
+     }
+     
+ }
+
+
+  /*screen min 1025px*/
+
+@media screen and (min-width: 1025px) {
+    #hebergements {
+         flex: 100%;
+         flex-direction: none;
+         gap: 20px;
+     }
+ } 
+ 
+ @media screen and (min-width: 1025px) {
+     .suites {
+          flex: 70%;
+          display: flex;
+          flex-direction: none;
+      }
+  } 
+ 
+ @media screen and (min-width: 1025px) {
+    figure.heberg  {
+          flex: 100%;
+          display: flex;
+          flex-direction: none;
+          width: auto;
+      }
+  } 
+ 
+  @media screen and (min-width: 1025px) {
+     aside {
+          flex: 30%;
+          display: flex;
+          flex-direction: none;
+          gap: 20px;
+      }
+  } 
+ 
+  @media screen and (min-width: 1025px) {
+     .les_plus_populaires {
+          flex: 100%;
+          flex-direction: none;
+          gap: 20px;
+      }
+  } 
+ 
+  @media screen and (min-width: 1025px) {
+     figure.pop {
+          flex: 100%;
+          flex-direction: none;
+          gap: 20px;
+      }
+  } 
+ 
+  @media screen and (min-width: 1025px) {
+     #activités {
+          flex: 100%;
+          flex-direction: none;
+          gap: 20px;
+      }
+  } 
+ 
+  @media screen and (min-width: 1025px) {
+     .parc {
+          flex: 100%;
+          flex-direction: none;
+          gap: 20px;
+      }
+  } 
+ 
+  @media screen and (min-width: 768px) {
+     .figure.nature {
+          flex: 100%;
+          flex-direction: none;
+          gap: 20px;
+      }
+  } 
+
