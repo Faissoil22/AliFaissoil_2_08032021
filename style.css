@@ -606,7 +606,7 @@ figure.nature p {
  } 
 
  @media screen and (max-width: 768px) {
-    #activités { 
+    #activites { 
          align-items: center;
          display: flex;
          flex: 100%;
@@ -710,7 +710,7 @@ figure.nature p {
   } 
  
   @media screen and (min-width: 769px) and (max-width: 1024px) {
-     #activités { 
+     #activites { 
           align-items: center;
           display: flex;
           flex: 100%;
@@ -803,7 +803,7 @@ figure.nature p {
   } 
  
   @media screen and (min-width: 1025px) {
-     #activités {
+     #activites {
           flex: 100%;
           flex-direction: none;
           gap: 20px;
