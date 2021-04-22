@@ -69,14 +69,22 @@ figure.nature :hover figure {
 
 /*---HEADER
 -------------------------------------*/
-#header {
+header {
   margin-bottom: 1.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
-nav {
+#menu {
   display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+nav.nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 #logo {
@@ -84,41 +92,38 @@ nav {
   padding-top: 20px;
 }
 
-nav {
-  display: flex;
-}
 
-nav ul {
+nav.nav a {
   display: flex;
-}
-
-nav ul li {
-  display: flex;
-  margin-left: 95px;
+   margin-left: 20px;
   padding-left: 20px;
+  justify-content: space-around;
 }
 
-nav ul li a {
+nav.nav a {
   padding-top: 20px;
-  color: #0065fc;
 }
 
-li.activites-btn a {
+a.activites-btn  {
   color: #000000;
+  justify-content: space-around;
 }
 
-.inscription a {
+a.inscription  {
   padding-top: 20px;
   color: #0065fc;
   font-weight: bold;
+  justify-content: space-around;
+  margin-left: 20px;
 }
 
-nav .hebergement-btn {
+a.hebergement-btn {
   color: #0065fc;
   font-weight: bold;
   border-width: 2px;
   border-top-style: solid;
   border-top-color: #0065fc;
+  justify-content: space-around;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -126,7 +131,7 @@ nav .hebergement-btn {
   transition: all 0.5s ease;
 }
 
-.activites:hover {
+a.activites-btn :hover {
   border-color: #0065fc;
   color: #0065fc;
 }
@@ -602,15 +607,11 @@ figure.nature p {
 /*screen max 736px*/
 
 @media screen and (max-width: 768px) {
-  #header {
+  header {
     flex-grow: 1;
   }
 
-  #logo {
-    order: 1;
-  }
-
-  nav .hebergement-btn {
+  a.hebergement-btn {
     color: #0065fc;
     font-weight: bold;
     border-width: 2px;
@@ -619,21 +620,9 @@ figure.nature p {
     border-top-style: none;
     border-top-color: none;
   }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  li.inscription {
-    order: 2;
-  }
-
-  li.hebergement-btn {
-    order: 43;
-  }
-
-  li.activites-btn {
-    order: 3;
+ 
+  #menu {
+    flex-wrap: wrap-reverse;
   }
 
   #hebergements {
@@ -725,7 +714,7 @@ figure.nature p {
 /*screen min 736px max 1024px*/
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  nav {
+  nav.nav {
     justify-content: space-between;
   }
 
