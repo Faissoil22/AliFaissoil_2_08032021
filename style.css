@@ -32,50 +32,40 @@ body {
   padding: 0;
 }
 
-.bouton i a {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.bouton :hover i a {
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-}
+/*effets zoom sur lzs images*/
 
 figure.heberg img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 figure.heberg :hover img {
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 figure.pop img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 figure.pop :hover img {
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 figure.nature figure {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 figure.nature :hover figure {
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 
 /*---HEADER
 -------------------------------------*/
@@ -596,7 +586,7 @@ figure.nature p {
   padding: 1rem;
   margin-top: 3rem;
   box-sizing: border-box;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .liens {
