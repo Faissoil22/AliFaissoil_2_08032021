@@ -610,6 +610,31 @@ figure.nature p {
   header {
     flex-grow: 1;
   }
+   header img {
+     position: absolute;
+   }
+   
+
+  #menu {
+    flex-wrap: wrap-reverse;
+  }
+
+  .barderecherche {
+    flex: 1;
+  }
+
+  .barderecherche button {
+    position: absolute;
+  }
+  
+  .barderecherche input {
+    flex: 1;
+  }
+
+  #hebergements {
+    width: unset;
+    flex-direction: column-reverse;
+  }
 
   a.hebergement-btn {
     color: #0065fc;
@@ -620,16 +645,6 @@ figure.nature p {
     border-top-style: none;
     border-top-color: none;
   }
- 
-  #menu {
-    flex-wrap: wrap-reverse;
-  }
-
-  #hebergements {
-    width: unset;
-    flex-direction: column-reverse;
-  }
-
   .suites {
     align-items: center;
     flex: 100%;
