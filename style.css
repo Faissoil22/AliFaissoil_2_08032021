@@ -32,15 +32,15 @@ body {
   padding: 0;
 }
 
-/*effets zoom sur lzs images*/
+/*effets zoom sur les images*/
 
-figure.heberg img {
+.suites figure {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
-figure.heberg :hover img {
+.suites :hover figure {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
