@@ -76,10 +76,8 @@ header {
 }
 
 #menu {
-  display: flex;
-  justify-content: flex-end;
   flex-grow: 1;
-  margin-right: 20px;
+  margin: 1rem;
 }
 
 nav.nav {
@@ -87,21 +85,20 @@ nav.nav {
   justify-content: space-between;
 }
 
-#logo {
+nav.nav h1 {
   margin-left: 1rem;
-  padding-top: 20px;
+  flex-grow: 1;
 }
 
-
-nav.nav a {
+nav.nav ul {
   display: flex;
-   margin-left: 20px;
-  padding-left: 20px;
-  justify-content: space-around;
+  margin-right: 20px;
 }
 
-nav.nav a {
-  padding-top: 20px;
+nav.nav ul li {
+  justify-content: space-between;
+  margin-left: 20px;
+  padding-left: 20px;
 }
 
 a.activites-btn  {
@@ -121,6 +118,8 @@ a.hebergement-btn {
   color: #0065fc;
   font-weight: bold;
   border-width: 2px;
+  padding-left: 2rem;
+  padding-top: 0.8rem;
   border-top-style: solid;
   border-top-color: #0065fc;
   justify-content: space-around;
@@ -200,9 +199,7 @@ a.activites-btn :hover {
   display: flex;
   margin-top: 0.5rem;
   margin-left: 0.5rem;
-  cursor: pointer;
-  transition-duration: 0.1s;
-  font-weight: bold;
+  
 }
 
 .icones {
@@ -216,6 +213,9 @@ a.activites-btn :hover {
   justify-content: center;
   align-items: center;
   margin-left: 0.5rem;
+  cursor: pointer;
+  transition-duration: 0.1s;
+  font-weight: bold;
 }
 
 .filtres .icones a i h4 {
@@ -414,6 +414,7 @@ aside {
   margin-left: 1rem;
   margin-top: 1rem;
   min-width: 269px;
+  padding: .3rem;
   height: 130px;
   border-radius: 15px;
   background-color: #fff;
@@ -447,7 +448,6 @@ aside {
 .pop figcaption {
   display: flex;
   flex-direction: column;
-  margin-left: 1rem;
 }
 
 .pop strong {
@@ -520,7 +520,8 @@ figure.nature p {
   margin-top: 1rem;
   border: 1px;
   border-radius: 15px;
-  background-color: #f2f2f2;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px lightgray;
 }
 
 .image_1 img {
@@ -553,7 +554,8 @@ figure.nature p {
   margin-top: 1rem;
   border: 1px;
   border-radius: 15px;
-  background-color: #f2f2f2;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px lightgray;
 }
 
 .colonne {
@@ -570,7 +572,8 @@ figure.nature p {
   margin-top: 1rem;
   border: 1px;
   border-radius: 15px;
-  background-color: #f2f2f2;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px lightgray;
 }
 
 .colonne img {
@@ -608,15 +611,51 @@ figure.nature p {
 
 @media screen and (max-width: 768px) {
   header {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  #menu {
+    display: flex;
+    flex-grow: 1;
+    margin: 0;
+  }
+  
+  nav.nav {
+    display: flex;
+    order: 2;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+  }
+  
+  
+  nav.nav ul {
+    display: flex;
+    margin-left: -2rem;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 20px;
+    order: 1;
     flex-grow: 1;
   }
-   header img {
-     position: absolute;
-   }
-   
 
-  #menu {
-    flex-wrap: wrap-reverse;
+  nav.nav ul li {
+    justify-content: space-between;
+  }
+  
+  a.activites-btn  {
+    color: #000000;
+    justify-content: space-around;
+  }
+  
+  a.inscription  {
+    padding-top: 20px;
+    color: #0065fc;
+    font-weight: bold;
+    justify-content: space-around;
+    margin-left: 20px;
+    order: 1;
   }
 
   .barderecherche {
@@ -885,6 +924,5 @@ figure.nature p {
   figure.nature {
     flex: 100%;
     flex-direction: none;
-    gap: 20px;
   }
 }
