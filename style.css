@@ -630,6 +630,9 @@ figure.nature p {
   .barderecherche input {
     flex: 1;
   }
+  button a {
+  display: none;
+  }
 
   #hebergements {
     width: unset;
@@ -732,6 +735,10 @@ figure.nature p {
   nav.nav {
     justify-content: space-between;
   }
+  
+  .fas.fa-search {
+    display: none;
+  }
 
   #hebergements {
     align-items: center;
@@ -819,6 +826,10 @@ figure.nature p {
 /*screen min 1025px*/
 
 @media screen and (min-width: 1025px) {
+
+  .fas.fa-search {
+    display: none;
+  }
   #hebergements {
     flex: 100%;
     flex-direction: none;
