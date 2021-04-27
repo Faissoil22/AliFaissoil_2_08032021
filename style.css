@@ -625,8 +625,10 @@ figure.nature p {
 
   .barderecherche button {
     position: absolute;
+    border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
   }
-  
+
+    
   .barderecherche input {
     flex: 1;
   }
