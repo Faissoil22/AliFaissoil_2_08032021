@@ -274,16 +274,28 @@ a.activites-btn :hover {
 
 /* Section Hebergements
 --------------------------*/
-.suites figure {
+.heberg img {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-.suites :hover figure {
+.heberg :hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+.heberg figcaption {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.heberg :hover figcaption {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 
 #hebergements {
   display: flex;
@@ -359,6 +371,19 @@ figure.pop :hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+figure.pop figcaption {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+figure.pop :hover figcaption {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
 .les_plus_populaires {
   flex: 30%;
   display: flex;
