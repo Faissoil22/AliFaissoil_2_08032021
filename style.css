@@ -32,41 +32,6 @@ body {
   padding: 0;
 }
 
-/*effets zoom sur les images*/
-
-.suites figure {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-.suites :hover figure {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-figure.pop img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-figure.pop :hover img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-figure.nature figure {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-figure.nature :hover figure {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
 /*---HEADER
 -------------------------------------*/
 header {
@@ -310,6 +275,16 @@ a.activites-btn :hover {
 
 /* Section Hebergements
 --------------------------*/
+.suites figure {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.suites :hover figure {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
 #hebergements {
   display: flex;
@@ -378,6 +353,16 @@ aside {
   flex: 30%;
 }
 
+figure.pop img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+figure.pop :hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .les_plus_populaires {
   flex: 30%;
   /* margin-left: 3rem; */
@@ -471,6 +456,17 @@ aside {
   margin-top: 0.2rem;
 }
 
+figure.nature figure {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+figure.nature :hover figure {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 #titre_activites h3 {
   padding-top: 1.5rem;
   margin-left: 0.5rem;
@@ -486,6 +482,7 @@ figure.nature {
   /*max-width: 100%;*/
   box-sizing: border-box;
   padding: 0 5px;
+  gap: 5px;
 }
 
 .figure.nature p {
