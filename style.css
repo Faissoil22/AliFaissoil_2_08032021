@@ -124,7 +124,6 @@ a.activites-btn :hover {
 .barderecherche i.fas.fa-map-marker-alt {
   background-color: #f2f2f2;
   border-radius: 30% 0 0 30%;
-  border-top-width: auto;
   padding: 1.5em;
   font-size: 10px;
   height: 0.5rem;
@@ -209,9 +208,9 @@ a.activites-btn :hover {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0rem;
+  margin-top: 0;
   border: 0.01rem solid #f2f2f2;
-  font-size: bold;
+  font-size: 0.8rem;
   height: 3.2rem;
   margin-left: -2rem;
   padding-left: 1rem;
@@ -396,7 +395,7 @@ figure.pop :hover figcaption {
 .pop {
   flex: 30%;
   object-fit: cover;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 #les_plus_pop {
@@ -619,7 +618,7 @@ figure.nature p {
 
 /*screen max 768px*/
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 270px) and (max-width: 767px) {
   header {
     margin-bottom: 1.5rem;
     display: flex;
@@ -781,7 +780,7 @@ figure.nature p {
 
 /*screen min 736px max 1024px*/
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   nav.nav {
     justify-content: space-between;
   }
@@ -875,63 +874,63 @@ figure.nature p {
 
 /*screen min 1025px*/
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
 
   .fas.fa-search {
     display: none;
   }
   #hebergements {
     flex: 100%;
-    flex-direction: none;
+    /* flex-direction: none; */
     gap: 20px;
   }
 
   .suites {
     flex: 70%;
     display: flex;
-    flex-direction: none;
+    /* flex-direction: none; */
   }
 
   figure.heberg {
     flex: 100%;
     display: flex;
-    flex-direction: none;
+    /* flex-direction: none; */
     /* width: auto; */
   }
 
   aside {
     flex: 30%;
     display: flex;
-    flex-direction: none;
+    /* flex-direction: none; */
     gap: 20px;
   }
 
   .les_plus_populaires {
     flex: 100%;
-    flex-direction: none;
+    /* flex-direction: none; */
     gap: 20px;
   }
 
   figure.pop {
     flex: 100%;
-    flex-direction: none;
+    /* flex-direction: none; */
     gap: 20px;
   }
 
   #activites {
     flex: 100%;
-    flex-direction: none;
+    /* flex-direction: none; */
     gap: 20px;
   }
 
   .parc {
     flex: 100%;
-    flex-direction: none;
+    /* flex-direction: none; */
     gap: 20px;
   }
 
   figure.nature {
     flex: 100%;
-    flex-direction: none;
+    /* flex-direction: none; */
   }
 }
