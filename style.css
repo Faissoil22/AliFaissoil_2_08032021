@@ -87,10 +87,6 @@ a.hebergement-btn {
   border-top-style: solid;
   border-top-color: #0065fc;
   justify-content: space-around;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -273,24 +269,18 @@ a.activites-btn :hover {
 /* Section Hebergements
 --------------------------*/
 .heberg img {
-  -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 .heberg :hover img {
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
 .heberg figcaption {
-  -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 .heberg :hover figcaption {
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -360,24 +350,19 @@ aside {
 }
 
 figure.pop img {
-  -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 figure.pop :hover img {
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
 figure.pop figcaption {
-  -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 figure.pop :hover figcaption {
-  -webkit-transform: scale(1.1);
+
   transform: scale(1.1);
 }
 
@@ -474,13 +459,10 @@ figure.pop :hover figcaption {
 }
 
 figure.nature figure {
-  -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 figure.nature :hover figure {
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -693,8 +675,8 @@ figure.nature p {
     border-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: #0065fc;
-    border-top-style: none;
-    border-top-color: none;
+    /* border-top-style: none;
+    border-top-color: none; */
   }
   .suites {
     align-items: center;
