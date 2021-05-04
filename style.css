@@ -309,7 +309,7 @@ a.activites-btn :hover {
   flex-wrap: wrap;
 }
 
-.heberg figure {
+.heberg a {
   width: 30%;
   min-width: 269px;
   margin-left: 1rem;
@@ -396,7 +396,11 @@ figure.pop :hover figcaption {
   padding-left: 9rem;
 }
 
-.pop figure {
+.pop a {
+  display: flex;
+}
+
+.pop  figure {
   display: flex;
   margin-left: 1rem;
   margin-top: 1rem;
@@ -408,12 +412,12 @@ figure.pop :hover figcaption {
   margin: 0.8rem;
 }
 
-.pop figure p {
+.pop  figure p {
   vertical-align: center;
   justify-content: space-around;
 }
 
-.pop figure a {
+.pop figure img {
   position: relative;
   min-height: 100%;
   width: 33%;
@@ -432,9 +436,10 @@ figure.pop :hover figcaption {
   border-bottom-left-radius: 15px;
 }
 
-.pop figcaption {
-  display: flex;
-  flex-direction: column;
+.pop a figure figcaption {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
 }
 
 .pop strong {
