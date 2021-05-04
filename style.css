@@ -421,7 +421,7 @@ figure.pop :hover figcaption {
   height: 130px;
   border-radius: 15px;
   background-color: #fff;
-  margin: 2rem;
+  margin: 0.5rem;
 }
 
 .pop figure p {
