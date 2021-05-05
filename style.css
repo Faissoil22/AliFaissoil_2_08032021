@@ -849,6 +849,7 @@ figure.nature p {
     flex: 30%;
     object-fit: cover;
     flex-wrap: nowrap;
+  }
 
 
   figure.pop a  {
