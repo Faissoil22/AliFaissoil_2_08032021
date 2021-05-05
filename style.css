@@ -711,7 +711,7 @@ figure.nature p {
     flex: 1;
   }
 
-  button p {
+  value.button {
   display: none;
   }
 
