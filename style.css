@@ -776,6 +776,7 @@ figure.nature p {
   }
 
   figure.nature {
+    align-items: center;
     display: flex;
     flex: 100%;
     flex-direction: column;
@@ -869,6 +870,7 @@ figure.nature p {
     border-radius: 15px;
     background-color: #fff;
     margin: 0.8rem;
+  }
 
 
   #activites {
@@ -906,6 +908,7 @@ figure.nature p {
   .fas.fa-search {
     display: none;
   }
+
   #hebergements {
     flex: 100%;
     margin: 1rem;
