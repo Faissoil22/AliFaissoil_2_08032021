@@ -641,7 +641,7 @@ figure.nature p {
     display: flex;
     flex: 1;
     margin: 0;
-    padding-right: 5rem;
+    padding-right: 1rem;
   }
   
   nav.nav {
@@ -801,6 +801,7 @@ figure.nature p {
   }
 
   #hebergements {
+    align-items: center;
     flex: 100%;
     flex-direction: column-reverse;
     margin: 1rem;
@@ -831,6 +832,7 @@ figure.nature p {
   }
 
   .les_plus_populaires {
+      align-items: center;
       display: flex;
       flex: 100%;
       flex-direction: column;
