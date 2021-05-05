@@ -32,6 +32,15 @@ body {
   padding: 0;
 }
 
+html {
+  margin:0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+body
+
 /*---HEADER
 -------------------------------------*/
 header {
@@ -42,7 +51,7 @@ header {
 
 #menu {
   flex-grow: 1;
-  margin: 1rem;
+  margin-top: 1rem;
 }
 
 nav.nav {
@@ -97,7 +106,6 @@ a.activites-btn :hover {
 /*Moteur de recherche
 -----------------------------------*/
 .trouver {
-  margin: 1rem;
   padding-left: 1rem;
 }
 
@@ -266,6 +274,15 @@ a.activites-btn :hover {
   padding-left: 0.2rem;
 }
 
+.bouton button {
+  transform: scale(1);
+  transition: 0.2s ease-in-out;
+}
+
+.bouton :hover button {
+  background-color: #deebff;
+}
+
 /* Section Hebergements
 --------------------------*/
 .heberg img {
@@ -377,6 +394,7 @@ figure.pop :hover figcaption {
   align-content: space-between;
   border-radius: 20px;
   margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .pop {
@@ -606,8 +624,14 @@ figure.nature p {
 
 /*screen max 768px*/
 
-@media screen and (max-width: 767px) {
+@media all  and (max-width: 800px) {
+  
+  aside {
+    flex: 1;
+  }
+
   header {
+    flex: 1;
     margin-bottom: 1.5rem;
     display: flex;
     justify-content: space-between; 
@@ -615,8 +639,9 @@ figure.nature p {
   
   #menu {
     display: flex;
-    flex-grow: 1;
+    flex: 1;
     margin: 0;
+    padding-right: 5rem;
   }
   
   nav.nav {
@@ -652,6 +677,7 @@ figure.nature p {
     font-weight: bold;
     justify-content: space-around;
     margin-left: 20px;
+    padding-right: 1rem;
   }
 
   a.hebergement-btn {
@@ -663,7 +689,16 @@ figure.nature p {
     border-top-style: none; 
   }
 
+  .trouver {
+    flex: 1;
+    flex-wrap: wrap;
+  }
+
   .barderecherche {
+    flex: 1;
+  }
+
+  .icones {
     flex: 1;
   }
 
@@ -675,11 +710,13 @@ figure.nature p {
   .barderecherche input {
     flex: 1;
   }
-  button a {
+
+  button p {
   display: none;
   }
 
   #hebergements {
+    flex: 1;
     width: unset;
     flex-direction: column-reverse;
     margin: 1rem;
@@ -687,15 +724,12 @@ figure.nature p {
 
   
   .suites {
-    align-items: center;
-    flex: 100%;
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
   figure.heberg {
-    align-items: center;
     flex: 100%;
     display: flex;
     flex-direction: column;
@@ -703,15 +737,13 @@ figure.nature p {
   }
 
   aside {
-    align-items: center;
-    flex: 100%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
   .les_plus_populaires {
-    align-items: center;
     display: flex;
     flex: 100%;
     flex-direction: column;
@@ -728,15 +760,13 @@ figure.nature p {
   }
 
   #activites {
-    align-items: center;
     display: flex;
-    flex: 100%;
+    flex: 1;
     flex-direction: column;
     width: 100%;
   }
 
   .parc {
-    align-items: center;
     display: flex;
     flex: 100%;
     flex-direction: column;
@@ -744,7 +774,6 @@ figure.nature p {
   }
 
   figure.nature {
-    align-items: center;
     display: flex;
     flex: 100%;
     flex-direction: column;
@@ -753,14 +782,14 @@ figure.nature p {
 
   .footer {
     flex-direction: column;
-    flex: 100%;
+    flex: 1;
     width: 100%;
   }
 }
 
 /*screen min 736px max 1024px*/
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media all and (min-width: 801px) and (max-width: 1024px) {
   nav.nav {
     justify-content: space-between;
   }
@@ -770,7 +799,6 @@ figure.nature p {
   }
 
   #hebergements {
-    align-items: center;
     flex: 100%;
     flex-direction: column-reverse;
     margin: 1rem;
@@ -781,6 +809,7 @@ figure.nature p {
     flex: 100%;
     display: flex;
     flex-flow: wrap;
+    padding-right: 1rem;
   }
 
   figure.heberg {
@@ -796,12 +825,14 @@ figure.nature p {
     display: flex;
     flex-flow: wrap;
     flex-grow: 1;
+    padding-right: 1rem;
   }
 
   .les_plus_populaires {
       display: flex;
       flex: 100%;
       flex-direction: column;
+      margin-bottom: 1rem;
   }
 
   #les_plus_pop {
@@ -840,6 +871,7 @@ figure.nature p {
     display: flex;
     flex: 100%;
     flex-flow: wrap;
+    padding-right: 1rem;
   }
 
   .parc {
@@ -864,7 +896,7 @@ figure.nature p {
 
 /*screen min 1025px*/
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
 
   .fas.fa-search {
     display: none;
@@ -887,6 +919,7 @@ figure.nature p {
   aside {
     flex: 30%;
     display: flex;
+    padding-right: 1rem;
   }
 
   .les_plus_populaires {
