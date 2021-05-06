@@ -39,7 +39,6 @@ html {
   height: 100%;
 }
 
-body
 
 /*---HEADER
 -------------------------------------*/
@@ -624,7 +623,7 @@ figure.nature p {
 
 /*screen max 768px*/
 
-@media all  and (max-width: 800px) {
+@media all  and (max-width: 768px) {
   
   aside {
     flex: 1;
@@ -792,7 +791,7 @@ figure.nature p {
 
 /*screen min 736px max 1024px*/
 
-@media all and (min-width: 801px) and (max-width: 1024px) {
+@media all and (min-width: 769px) and (max-width: 1024px) {
   nav.nav {
     justify-content: space-between;
   }
