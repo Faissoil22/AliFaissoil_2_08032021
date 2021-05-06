@@ -646,6 +646,7 @@ figure.nature p {
   nav.nav {
     display: flex;
     order: 2;
+    flex-grow: 1;
     flex-wrap: wrap;
     padding-top: 2rem;
   }
@@ -655,7 +656,7 @@ figure.nature p {
     display: flex;
     margin-left: -2rem;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 20px;
     order: 1;
     flex-grow: 1;
