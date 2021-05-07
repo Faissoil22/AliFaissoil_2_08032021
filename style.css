@@ -392,8 +392,6 @@ figure.pop :hover figcaption {
   flex-wrap: wrap;
   align-content: space-between;
   border-radius: 20px;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .pop {
@@ -410,6 +408,7 @@ figure.pop :hover figcaption {
 
 #les_plus_pop h3 {
   justify-content: flex-start;
+  flex-grow: 1;
 }
 
 .fas.fa-chart-line {
@@ -813,7 +812,7 @@ figure.nature p {
     flex: 100%;
     display: flex;
     flex-flow: wrap;
-    padding-right: 1rem;
+    margin-right: 1rem;
   }
 
   figure.heberg {
@@ -833,7 +832,6 @@ figure.nature p {
   }
 
   .les_plus_populaires {
-      align-items: center;
       display: flex;
       flex: 100%;
       flex-direction: column;
