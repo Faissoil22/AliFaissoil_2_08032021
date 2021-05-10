@@ -863,7 +863,6 @@ figure.nature p {
     flex-wrap: nowrap;
   }
 
-
   figure.pop a  {
     align-items: center;
     display: flex;
@@ -882,7 +881,6 @@ figure.nature p {
     background-color: #fff;
     margin: 0.8rem;
   }
-
 
   #activites {
     align-items: center;
@@ -961,5 +959,9 @@ figure.nature p {
 
   figure.nature {
     flex: 100%;
+  }
+
+  .footer {
+   flex: 1;
   }
 }
