@@ -395,11 +395,14 @@ aside {
   align-content: space-between;
   border-radius: 20px;
   margin-left: 1rem;
+  margin-right: 1.5rem;
+  height: 100%;
 }
 
 .pop {
   flex: 30%;
   object-fit: cover;
+  height: 100%;
   /* flex-wrap: wrap; */
 }
 
@@ -432,6 +435,7 @@ aside {
   border-radius: 15px;
   background-color: #fff;
   margin: 0.8rem;
+  align-self: stretch;
 }
 
 .pop figure p {
@@ -469,7 +473,7 @@ aside {
 }
 
 .pop .etoiles {
-  padding-top: 1.15rem;
+  padding-top: 2rem;
 }
 
 #plus {
@@ -924,10 +928,26 @@ figure.nature p {
 
 /*screen min 812px*/
 
-@media all and (min-width: 812px){
+@media all and (min-width: 1025px){
+
+  html, body {
+    height: 100%;
+  }
   .fas.fa-search {
     display: none;
   }
+ 
+  .heberg {
+    justify-content: center;
+  }
+
+  .pop .etoiles {
+    padding-top: 1.5rem;
+  }
+
+  .pop a {
+    display: flex;
+    padding-bottom: 2.5rem;
 }
 
 
