@@ -337,7 +337,7 @@ a.activites-btn :hover {
   background-color: #fff;
 }
 
-.heberg article p {
+.heberg figure p {
   vertical-align: center;
   justify-content: space-around;
 }
@@ -422,7 +422,7 @@ aside {
   display: flex;
 }
 
-.pop  article {
+.pop figure {
   display: flex;
   margin-left: 1rem;
   margin-top: 1rem;
@@ -434,12 +434,12 @@ aside {
   margin: 0.8rem;
 }
 
-.pop article p {
+.pop figure p {
   vertical-align: center;
   justify-content: space-around;
 }
 
-.pop a article img {
+.pop a figure img {
   position: relative;
   min-height: 100%;
   width: 33%;
@@ -458,7 +458,7 @@ aside {
   border-bottom-left-radius: 15px;
 }
 
-.pop a article figcaption {
+.pop a figure figcaption {
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
@@ -745,7 +745,7 @@ figure.nature p {
     width: 100%;
   }
 
-  article.heberg {
+  figure.heberg {
     align-items: center;
     flex: 100%;
     display: flex;
@@ -765,7 +765,7 @@ figure.nature p {
     margin-bottom: 1.5rem;
   }
 
-  .pop article {
+  .pop figure {
     display: flex;
     margin-left: 1rem;
     margin-top: 1rem;
@@ -777,7 +777,7 @@ figure.nature p {
     margin: 0.8rem;
   }
 
-  article.pop {
+  figure.pop {
     align-items: center;
     display: flex;
     flex: 100%;
@@ -840,7 +840,7 @@ figure.nature p {
      justify-content: center;
    }
 
-  article.heberg {
+  figure.heberg {
     align-items: center;
     flex: 100%;
     display: flex;
@@ -875,14 +875,14 @@ figure.nature p {
     flex-wrap: nowrap;
   }
 
-  article.pop a  {
+  figure.pop a  {
     align-items: center;
     display: flex;
     flex: 100%;
     flex-flow: wrap;
   }
 
-  .pop article {
+  .pop figure {
     display: flex;
     margin-left: 1rem;
     margin-top: 1rem;
