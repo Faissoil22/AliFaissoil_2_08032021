@@ -718,7 +718,7 @@ figure.nature p {
     flex: 1;
   }
 
-  button legend {
+  button [value] {
   display: none;
   }
 
