@@ -718,8 +718,19 @@ figure.nature p {
     flex: 1;
   }
 
-  button [value] {
+  button[name^="Rechercher"] {
   display: none;
+  }
+
+  .barderecherche .fas.fa-search {
+    border-radius: 0 0.7rem 0.7rem 0;
+    color: white;
+    padding: 0.5em;
+    margin-left: -0.2rem;
+    margin-top: 5px;
+    height: 1.2rem;
+    background-color: #0984e3;
+    border: none;
   }
 
   #hebergements {
