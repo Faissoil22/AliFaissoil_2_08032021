@@ -825,6 +825,9 @@ figure.nature p {
   nav.nav {
     justify-content: space-between;
   }
+  .fas.fa-search {
+    display: none;
+  }
   
   #hebergements {
     align-items: center;
