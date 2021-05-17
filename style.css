@@ -629,7 +629,7 @@ figure.nature p {
 
 @media all  and (max-width: 768px) {
 
-  main{
+  main {
     margin: 0;
     width: 100%;
   }
@@ -657,6 +657,10 @@ figure.nature p {
     display: flex;
     order: 3;
     width: 100%;
+  }
+
+  .nav a {
+    padding: 40px 0px 0px 40px;
   }
 
   nav.nav ul {
