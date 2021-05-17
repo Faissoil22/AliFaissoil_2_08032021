@@ -843,9 +843,9 @@ figure.nature p {
     flex-flow: wrap;
     margin-right: 1rem;
   }
-   .heberg {
+  .heberg {
      justify-content: center;
-   }
+  }
 
   figure.heberg {
     align-items: center;
