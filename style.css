@@ -41,7 +41,7 @@ body {
 
 
 main {
-  margin: 0 50px 50px;
+  margin: 0 0 0 0;
 }
 
 
@@ -50,6 +50,7 @@ main {
 .logo {
   margin-top: 30px;
   flex: 1;
+  margin-left: 1rem;
 }
 
 .menu {
@@ -83,6 +84,7 @@ a.inscription  {
   color: #0065FC;
   font-weight: 700;
   padding-top: 30px;
+  padding-right: 0.5rem;
 }
 
 a.hebergement-btn {
@@ -173,7 +175,7 @@ a.activites-btn :hover {
   transition: 0.4s;
 }
 
-.filtres .icones h4 {
+.filtres .icones h2 {
   justify-content: center;
   align-items: center;
   margin-left: 0.5rem;
@@ -182,7 +184,7 @@ a.activites-btn :hover {
   font-weight: bold;
 }
 
-.filtres .icones a i h4 {
+.filtres .icones a i h2 {
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
@@ -283,27 +285,10 @@ a.activites-btn :hover {
 
 /* Section Hebergements
 --------------------------*/
-.heberg img {
-  transform: scale(1);
-  transition: 0.2s ease-in-out;
-}
-.heberg :hover img {
-  transform: scale(1.1);
-}
-
-.heberg figcaption {
-  transform: scale(1);
-  transition: 0.2s ease-in-out;
-}
-.heberg :hover figcaption {
-  transform: scale(1.1);
-}
-
 
 #hebergements {
   display: flex;
   width: 100%;
-  margin: 1rem;
 }
 
 .suites {
@@ -314,10 +299,10 @@ a.activites-btn :hover {
   border-radius: 20px;
 }
 
-#titre_heberg h3 {
+#titre_heberg h2 {
   margin-left: 1.5rem;
-  padding-top: 2rem;
-  flex-grow: 1;
+  padding: 1.5rem 0 0 1rem;
+  /* flex-grow: 1; */
 }
 
 .heberg {
@@ -365,25 +350,6 @@ a.activites-btn :hover {
 aside {
   flex: 30%;
 }
-
-.pop img {
-  transform: scale(1);
-  transition: 0.3s ease-in-out;
-}
-
-.pop :hover img {
-  transform: scale(1.1);
-}
-
-.pop figcaption {
-  transform: scale(1);
-  transition: 0.3s ease-in-out;
-}
-
-.pop :hover figcaption {
-  transform: scale(1.1);
-}
-
 
 .les_plus_populaires {
   flex: 30%;
@@ -482,22 +448,14 @@ aside {
 
 /*Les activités en nature*/
 
+#titre_activites {
+  margin-left: 1rem;
+  padding-top: 2rem;
+}
+
 #activites {
   display: flex;
   margin-top: 0.2rem;
-}
-
-figure.nature figure {
-  transform: scale(1);
-  transition: 0.3s ease-in-out;
-}
-figure.nature :hover figure {
-  transform: scale(1.1);
-}
-
-#titre_activites h3 {
-  padding-top: 1.5rem;
-  margin-left: 0.5rem;
 }
 
 .parc {
@@ -528,6 +486,7 @@ figure.nature p {
   padding-top: 1.7rem;
   margin-left: 1rem;
 }
+
 
 .image_1 {
   flex: 25%;
@@ -580,7 +539,6 @@ figure.nature p {
 
 .colonne {
   flex: 25%;
-  height: 350px;
   padding: 0 4px;
 }
 
@@ -627,7 +585,7 @@ figure.nature p {
 
 /*screen max 768px*/
 
-@media all  and (max-width: 768px) {
+@media screen  and (max-width: 768px) {
 
   main {
     margin: 0;
@@ -635,18 +593,22 @@ figure.nature p {
   }
 
   aside {
-    margin-right: 1rem;
     display: flex;
-    min-width: 100%;
+    flex-direction: column;
+    vertical-align: center;
+    align-items: center;
   }
 
   header {
     display: flex;
-    
-  }
+  
+  } 
+
   .logo {
-    margin-left: 20px;
+    margin-left: 10px;
+    flex: 1;
   }
+
   .menu {
     display: flex;
     flex-direction: column;
@@ -673,10 +635,9 @@ figure.nature p {
   }
 
   nav.nav li {
-    width: 50%;
+    width: 100%;
     text-align: center;
     padding: 20px 0;
-    border-bottom: 3px solid #f2f2f2;
   }
   
   a.activites-btn  {
@@ -745,7 +706,10 @@ figure.nature p {
     flex: 1;
     width: unset;
     flex-direction: column-reverse;
-    margin: 1rem;
+  }
+
+  #titre_heberg {
+    padding: 1.5rem 0 0 1.2rem;
   }
 
   .suites {
@@ -776,6 +740,7 @@ figure.nature p {
 
   .pop figure {
     display: flex;
+    flex-grow: 1;
     margin-left: 1rem;
     margin-top: 1rem;
     max-width: 760px;
@@ -801,12 +766,9 @@ figure.nature p {
     flex-direction: column;
     width: 100%;
   }
-
-  .parc {
-    display: flex;
-    flex: 100%;
-    flex-direction: column;
-    width: 100%;
+  
+  #titre_activites{
+    padding-bottom: 0rem;
   }
 
   figure.nature {
@@ -816,20 +778,75 @@ figure.nature p {
     flex-direction: column;
     width: 100%;
   }
+  .image_1, .image_2, .photo_1, .photo_2, .photo_3, .photo_4 {
+    max-width: 354px;
+  }
 
-  .footer {
+  .image_1 figure {
+    max-width: 364.24px;
+    flex-wrap: wrap;
+    height: 70%;
+    margin-bottom: 0.5rem;
+    border: 1px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px lightgrey;
+  }
+
+  .image_2 figure {
+    max-width: 364.24px;
+    flex-wrap: wrap;
+    height: 70%;
+    margin-bottom: 0.5rem;
+    border: 1px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px lightgrey;
+  }
+
+  .image_1 {
+    height: 70%;
+    padding: 0 0 0 0;
+    width: 100%; 
+  }
+
+  .image_2 {
+    height: 70%;
+    padding: 0 0 0 0;
+    width: 100%;
+  }
+
+  .colonne {
+    width: 100%;
+    height: 70%;
+  } 
+
+  figure.nature img {
+    background-size: 100% 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 70%;
+}
+  footer {
     flex-direction: column;
     flex: 1;
     width: 100%;
   }
+
+  .footer {
+    flex-direction: column;
+  }
 }
 
-/*screen min 736px max 1024px*/
+/*screen min 769px max 1023px*/
 
-@media all and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
   nav.nav {
     justify-content: space-between;
   }
+
   .fas.fa-search {
     display: none;
   }
@@ -860,19 +877,16 @@ figure.nature p {
   }
 
   aside {
-    align-items: center;
-    flex: 100%;
     display: flex;
-    flex-flow: wrap;
-    flex-grow: 1;
-    padding-right: 1rem;
+    /* flex-direction: column; */
+    align-items: center;
   }
 
   .les_plus_populaires {
     display: flex;
     flex: 100%;
-    flex-direction: column;
     margin-bottom: 1rem;
+    margin-left: 0;
   }
 
   #les_plus_pop {
@@ -885,6 +899,7 @@ figure.nature p {
     flex: 30%;
     object-fit: cover;
     flex-wrap: nowrap;
+    justify-content: center;
   }
 
   figure.pop a  {
@@ -927,26 +942,37 @@ figure.nature p {
     flex: 100%;
   }
 
-  .footer {
+  footer {
     flex-direction: column;
-    flex: 100%;
-    flex-flow: wrap;
+    flex: 1;
+    width: 100%;
+  }
+  
+  .footer {
+    flex-direction: row;
   }
 }
 
-/*screen min 812px*/
+/*screen min 1024px*/
 
-@media all and (min-width: 1025px){
+ @media screen and (min-width: 1024px){
 
   html, body {
     height: 100%;
   }
+
   .fas.fa-search {
     display: none;
   }
  
   .heberg {
     justify-content: center;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .pop .etoiles {
@@ -957,6 +983,12 @@ figure.nature p {
     display: flex;
     padding-bottom: 2.5rem;
   }
-}
+
+  footer {
+    display: flex;
+    flex: 1;
+    width: 100%;
+  }
+} 
 
 
