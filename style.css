@@ -34,9 +34,9 @@ html {
 }
 
 body {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 
@@ -44,6 +44,12 @@ main {
   margin: 0 0 0 0;
 }
 
+
+.container {
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+}
 
 /*---HEADER
 -------------------------------------*/
@@ -92,7 +98,6 @@ a.hebergement-btn {
   font-weight: bold;
   border-width: 3px;
   padding-left: 2rem;
-  padding-top: 26px;
   border-top-style: solid;
   border-top-color: #0065fc;
   justify-content: space-around;
@@ -118,10 +123,14 @@ a.activites-btn :hover {
 }
 
 .barderecherche {
-  align-items: center;
-  display: flex;
+  /* align-items: center; */
+  display: inline-flex;
   margin: 15px;
   margin-left: 1rem;
+}
+
+i.fas.fa-search {
+  display: none;
 }
 
 .barderecherche i.fas.fa-map-marker-alt {
@@ -134,12 +143,12 @@ a.activites-btn :hover {
 }
 
 .barderecherche input {
-  width: 13rem;
+  width: 229px;
   padding: 0.5em;
   border: 1px solid #f2f2f2;
   margin-left: -0.2rem;
   margin-top: 5px;
-  height: 2.3rem;
+  height: 37px;
   background-color: white;
 }
 
@@ -164,8 +173,7 @@ a.activites-btn :hover {
 .filtres * {
   display: flex;
   margin-top: 0.5rem;
-  margin-left: 0.5rem;
-  
+  margin-left: 0.5rem; 
 }
 
 .icones {
@@ -225,6 +233,10 @@ a.activites-btn :hover {
   z-index: -1;
 }
 
+.fas.fa-search {
+  display: none;
+}
+
 .fa-money-bill-wave-alt {
   color: #1877f2;
 }
@@ -247,6 +259,10 @@ a.activites-btn :hover {
 
 .fa-star {
   color: #1877f2;
+}
+
+.fal.fa-star {
+  color: #332f2f;
 }
 
 .infonombredelogements {
@@ -274,11 +290,6 @@ a.activites-btn :hover {
   padding-left: 0.2rem;
 }
 
-.bouton button {
-  transform: scale(1);
-  transition: 0.2s ease-in-out;
-}
-
 .bouton :hover button {
   background-color: #deebff;
 }
@@ -286,14 +297,20 @@ a.activites-btn :hover {
 /* Section Hebergements
 --------------------------*/
 
-#hebergements {
+.hebergements {
   display: flex;
+  flex: 2;
   width: 100%;
+  max-width: 1366px;
 }
 
 .suites {
-  flex: 70%;
-  display: flex;
+  /* display: flex; */
+  max-width: 885px;
+  height: 625px;
+}
+
+.suites {
   background-color: #f2f2f2;
   flex-wrap: wrap;
   border-radius: 20px;
@@ -311,28 +328,31 @@ a.activites-btn :hover {
   flex-wrap: wrap;
 }
 
-.heberg a {
-  width: 30%;
-  min-width: 269px;
+.heberg a figure {
+  max-width: 249px;
+  height: 204px;
   margin-left: 1rem;
   margin-top: 1rem;
   border-radius: 15px;
   background-color: #fff;
 }
 
-.heberg figure p {
-  vertical-align: center;
-  justify-content: space-around;
+.heberg figure {
+  padding: 5px;
+  margin: 20px;
 }
 
-.heberg a img {
+.heberg figure p {
+  vertical-align: center;
+  padding: 5px;
+}
+
+.heberg  img {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   object-fit: cover;
-  margin: 5px;
-  width: 96%;
-  min-width: 260px;
-  height: 112px;
+  width: 100%;
+  height: 117px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -348,26 +368,18 @@ a.activites-btn :hover {
 /*La colonne les plus populaires*/
 
 aside {
-  flex: 30%;
-}
+ /* flex: 30%; */
+ max-width: 421px;
+} 
 
 .les_plus_populaires {
-  flex: 30%;
   display: flex;
   background-color: #f2f2f2;
-  flex-wrap: wrap;
-  align-content: space-between;
+  flex-direction: column;
   border-radius: 20px;
   margin-left: 1rem;
   margin-right: 1.5rem;
   height: 100%;
-}
-
-.pop {
-  flex: 30%;
-  object-fit: cover;
-  height: 100%;
-  /* flex-wrap: wrap; */
 }
 
 #les_plus_pop {
@@ -382,7 +394,7 @@ aside {
 }
 
 .fas.fa-chart-line {
-  padding-left: 9rem;
+  justify-content: flex-end;
 }
 
 .pop a {
@@ -391,15 +403,12 @@ aside {
 
 .pop figure {
   display: flex;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  min-width: 269px;
-  padding: .3rem;
-  height: 130px;
+  margin: 15px;
+  max-width: 343px;
+  height: 145px;
+  padding: 5px;
   border-radius: 15px;
   background-color: #fff;
-  margin: 0.8rem;
-  align-self: stretch;
 }
 
 .pop figure p {
@@ -408,20 +417,14 @@ aside {
 }
 
 .pop a figure img {
-  position: relative;
   min-height: 100%;
-  width: 33%;
-  min-width: 33%;
   max-width: 33%;
 }
 
 .pop img {
   object-fit: cover;
-  position: absolute;
-  min-height: 100%;
-  width: 50%;
-  min-width: 80px;
-  max-width: 80px;
+  height: 136px;
+  width: 100%;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
@@ -437,7 +440,7 @@ aside {
 }
 
 .pop .etoiles {
-  padding-top: 2rem;
+  padding-top: 45px;
 }
 
 #plus {
@@ -449,18 +452,16 @@ aside {
 /*Les activités en nature*/
 
 #titre_activites {
-  margin-left: 1rem;
-  padding-top: 2rem;
+  justify-content: flex-start;
+  margin-top: 2rem;
 }
 
 #activites {
   display: flex;
   margin-top: 0.2rem;
-}
-
-.parc {
   flex: 100%;
 }
+
 
 figure.nature {
   display: flex;
@@ -490,14 +491,14 @@ figure.nature p {
 
 .image_1 {
   flex: 25%;
-  height: 350px;
-  padding: 0 4px;
+  margin: 0 2rem 0 0
+  ;
 }
 
 .image_1 figure {
-  flex: 25%;
-  max-width: 364.24px;
-  height: 350px;
+  flex: 4;
+  max-width: 301px;
+  height: 450px;
   margin-top: 1rem;
   border: 1px;
   border-radius: 15px;
@@ -506,30 +507,28 @@ figure.nature p {
 }
 
 .image_1 img {
-  max-width: 364.24px;
-  height: 85%;
-  vertical-align: middle;
-  object-fit: cover;
-}
-
-.image_2 {
-  flex: 25%;
-  height: 350px;
-  padding: 0 4px;
-}
-
-.image_2 img {
   width: 100%;
-  max-width: 364.24px;
-  height: 85%;
+  height: 392px;
   vertical-align: middle;
   object-fit: cover;
 }
+
+
+
+ .colonne_1 {
+  flex: 25%;
+  margin: 0 2rem 0 0
+
+ }
+
+ .colonne_2 {
+  flex: 25%;
+ }
+  
 
 .image_2 figure {
-  flex: 25%;
-  max-width: 364.24px;
-  height: 350px;
+  max-width: 308px;
+  height: 239px;
   margin-top: 1rem;
   border: 1px;
   border-radius: 15px;
@@ -537,14 +536,21 @@ figure.nature p {
   box-shadow: 1px 1px 1px lightgray;
 }
 
-.colonne {
-  flex: 25%;
-  padding: 0 4px;
+.image_2 img {
+  width: 100%;
+  height: 165px;
+  vertical-align: middle;
+  object-fit: cover;
 }
 
-.colonne figure {
-  max-width: 364.24px;
-  flex-wrap: wrap;
+
+.image_3 {
+  flex: 25%;
+  padding-top: 1.5rem;
+}
+
+.image_3 figure {
+  max-width: 308px;
   height: 167px;
   margin-top: 1rem;
   border: 1px;
@@ -553,22 +559,92 @@ figure.nature p {
   box-shadow: 1px 1px 1px lightgray;
 }
 
-.colonne img {
-  max-width: 364.24px;
+.image_3 img {
   width: 100%;
-  height: 70%;
+  height: 109px;
   vertical-align: middle;
   object-fit: cover;
+}
+
+
+.image_4 {
+  flex: 25%;
+  height: 350px;
+  margin: 0 2rem 0 0
+}
+
+.image_4 img {
+  width: 100%;
+  height: 392px;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.image_4 figure {
+  flex: 25%;
+  max-width: 302px;
+  height: 452px;
+  margin-top: 1rem;
+  border: 1px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px lightgray;
+}
+
+.image_5 {
+  flex: 25%;
+}
+
+.image_5 img {
+  width: 100%;
+  height: 143px;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.image_5 figure {
+  flex: 25%;
+  max-width: 306px;
+  height: 199px;
+  margin-top: 1rem;
+  border: 1px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px lightgray;
+}
+
+.image_6 {
+  flex: 25%;
+  padding-top: 1.5rem;
+}
+
+.image_6 img {
+  width: 100%;
+  height: 158px;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.image_6 figure {
+  flex: 25%;
+  max-width: 308px;
+  height: 217px;
+  margin-top: 1rem;
+  border: 1px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px lightgray;
 }
 
 /*Le pied de page*/
 
 .footer {
   display: flex;
+  height: 239px;
   justify-content: space-around;
   width: 100%;
-  padding: 1rem;
-  margin-top: 3rem;
+  padding: 47px 0 76px 0 ;
+  margin-top: 60px;
   box-sizing: border-box;
   background-color: #f2f2f2;
 }
@@ -580,415 +656,4 @@ figure.nature p {
 .footer li {
   padding-bottom: 1.2rem;
 }
-
-/*Mobile------*/
-
-/*screen max 768px*/
-
-@media screen  and (max-width: 768px) {
-
-  main {
-    margin: 0;
-    width: 100%;
-  }
-
-  aside {
-    display: flex;
-    flex-direction: column;
-    vertical-align: center;
-    align-items: center;
-  }
-
-  header {
-    display: flex;
-  
-  } 
-
-  .logo {
-    margin-left: 10px;
-    flex: 1;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-  }
-  
-  nav.nav {
-    display: flex;
-    order: 3;
-    width: 100%;
-  }
-
-  .nav a {
-    padding: 40px 0px 0px 40px;
-  }
-
-  nav.nav ul {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding-top: 20px;
-    order: 1;
-    flex-grow: 1;
-  }
-
-  nav.nav li {
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  a.activites-btn  {
-    color: #000000;
-    padding-right: 20px;
-  }
-  
-  a.inscription  {
-    align-self: flex-end;
-    padding: 0;
-    margin-right: 20px;
-    position: relative;
-    bottom: 30px;
-  }
-
-  a.hebergement-btn {
-    color: #0065fc;
-    font-weight: bold;
-    border-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: #0065fc;
-    border-top-style: none;
-    padding-left: 2rem;
-    padding-right: 0.1rem; 
-  }
-
-  .trouver {
-    flex: 1;
-    flex-wrap: wrap;
-    min-width: 280px;
-  }
-
-  .barderecherche {
-    flex: 1;
-  }
-
-  .icones {
-    flex: 1;
-  }
-
-  .barderecherche button {
-    position: absolute;
-    border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
-  }
-
-  .barderecherche input {
-    flex: 1;
-  }
-
-  button[name^="Rechercher"] {
-  display: none;
-  }
-
-  .barderecherche .fas.fa-search {
-    border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
-    color: white;
-    padding: 0.5em;
-    margin-left: -0.7rem;
-    margin-top: 5px;
-    height: 1.2rem;
-    background-color: #0984e3;
-    border: none;
-  }
-
-  #hebergements {
-    flex: 1;
-    width: unset;
-    flex-direction: column-reverse;
-  }
-
-  #titre_heberg {
-    padding: 1.5rem 0 0 1.2rem;
-  }
-
-  .suites {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  figure.heberg {
-    align-items: center;
-    flex: 100%;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .heberg {
-    justify-content: center;
-  }
-
-  .les_plus_populaires {
-    display: flex;
-    flex: 100%;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 1.5rem;
-  }
-
-  .pop figure {
-    display: flex;
-    flex-grow: 1;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    max-width: 760px;
-    padding: .3rem;
-    height: 130px;
-    border-radius: 15px;
-    background-color: #fff;
-    margin: 0.8rem;
-  }
-
-  figure.pop {
-    align-items: center;
-    display: flex;
-    flex: 100%;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  #activites {
-    align-items: center;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  #titre_activites{
-    padding-bottom: 0rem;
-  }
-
-  figure.nature {
-    align-items: center;
-    display: flex;
-    flex: 100%;
-    flex-direction: column;
-    width: 100%;
-  }
-  .image_1, .image_2, .photo_1, .photo_2, .photo_3, .photo_4 {
-    max-width: 354px;
-  }
-
-  .image_1 figure {
-    max-width: 364.24px;
-    flex-wrap: wrap;
-    height: 70%;
-    margin-bottom: 0.5rem;
-    border: 1px;
-    border-radius: 15px;
-    background-color: #fff;
-    box-shadow: 1px 1px 1px lightgrey;
-  }
-
-  .image_2 figure {
-    max-width: 364.24px;
-    flex-wrap: wrap;
-    height: 70%;
-    margin-bottom: 0.5rem;
-    border: 1px;
-    border-radius: 15px;
-    background-color: #fff;
-    box-shadow: 1px 1px 1px lightgrey;
-  }
-
-  .image_1 {
-    height: 70%;
-    padding: 0 0 0 0;
-    width: 100%; 
-  }
-
-  .image_2 {
-    height: 70%;
-    padding: 0 0 0 0;
-    width: 100%;
-  }
-
-  .colonne {
-    width: 100%;
-    height: 70%;
-  } 
-
-  figure.nature img {
-    background-size: 100% 100%;
-    width: 100%;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 70%;
-}
-  footer {
-    flex-direction: column;
-    flex: 1;
-    width: 100%;
-  }
-
-  .footer {
-    flex-direction: column;
-  }
-}
-
-/*screen min 769px max 1023px*/
-
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-  nav.nav {
-    justify-content: space-between;
-  }
-
-  .fas.fa-search {
-    display: none;
-  }
-  
-  #hebergements {
-    align-items: center;
-    flex: 100%;
-    flex-direction: column-reverse;
-    margin: 1rem;
-  }
-
-  .suites {
-    align-items: center;
-    flex: 100%;
-    display: flex;
-    flex-flow: wrap;
-    margin-right: 1rem;
-  }
-  .heberg {
-     justify-content: center;
-  }
-
-  figure.heberg {
-    align-items: center;
-    flex: 100%;
-    display: flex;
-    flex-flow: wrap;
-  }
-
-  aside {
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-  }
-
-  .les_plus_populaires {
-    display: flex;
-    flex: 100%;
-    margin-bottom: 1rem;
-    margin-left: 0;
-  }
-
-  #les_plus_pop {
-    justify-content: space-between;
-    flex-grow: 1;
-  }
-
-  .pop {
-    display: flex;
-    flex: 30%;
-    object-fit: cover;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-
-  figure.pop a  {
-    align-items: center;
-    display: flex;
-    flex: 100%;
-    flex-flow: wrap;
-  }
-
-  .pop figure {
-    display: flex;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    max-width: 260px;
-    padding: .3rem;
-    height: 130px;
-    border-radius: 15px;
-    background-color: #fff;
-    margin: 0.8rem;
-  }
-
-  #activites {
-    align-items: center;
-    display: flex;
-    flex: 100%;
-    flex-flow: wrap;
-    padding-right: 1rem;
-  }
-
-  .parc {
-    align-items: center;
-    display: flex;
-    flex: 100%;
-    flex-flow: wrap;
-  }
-
-  figure.nature {
-    align-items: center;
-    display: flex;
-    flex: 100%;
-  }
-
-  footer {
-    flex-direction: column;
-    flex: 1;
-    width: 100%;
-  }
-  
-  .footer {
-    flex-direction: row;
-  }
-}
-
-/*screen min 1024px*/
-
- @media screen and (min-width: 1024px){
-
-  html, body {
-    height: 100%;
-  }
-
-  .fas.fa-search {
-    display: none;
-  }
- 
-  .heberg {
-    justify-content: center;
-  }
-
-  aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .pop .etoiles {
-    padding-top: 1.5rem;
-  }
-
-  .pop a {
-    display: flex;
-    padding-bottom: 2.5rem;
-  }
-
-  footer {
-    display: flex;
-    flex: 1;
-    width: 100%;
-  }
-} 
-
 
