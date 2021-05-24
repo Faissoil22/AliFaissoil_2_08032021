@@ -657,3 +657,319 @@ figure.nature p {
   padding-bottom: 1.2rem;
 }
 
+@media only screen and (max-width: 375px) and (orientation: portrait) {
+
+  body {
+   margin: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    box-sizing: content-box;
+    width: 100%;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .logo {
+    margin-left: 10px;
+    flex: 1;
+  }
+
+  
+  nav.nav {
+    display: flex;
+    order: 3;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  .nav a {
+    padding: 40px 0px 0px 40px;
+  }
+
+  nav.nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 20px;
+    order: 1;
+    flex-grow: 1;
+  }
+
+  nav.nav li {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  a.activites-btn  {
+    color: #000000;
+    padding-right: 20px;
+  }
+  
+  a.inscription  {
+    align-self: flex-end;
+    padding: 0;
+    margin-right: 20px;
+    position: relative;
+    bottom: 30px;
+    order: 1;
+  }
+
+  a.hebergement-btn {
+    color: #0065fc;
+    font-weight: bold;
+    border-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #0065fc;
+    border-top-style: none;
+    /* padding-left: 2rem; */
+    padding-right: 0.1rem; 
+  }
+
+  .recherche {
+    flex-flow: row wrap;
+    width: auto;
+    height: auto;
+  }
+
+  .trouver {
+    flex: 1;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .barderecherche {
+    display: flex;
+    flex: 1;
+    width: auto;
+  }
+
+  .icones {
+    flex: 1;
+    width: auto;
+  }
+
+  .barderecherche button {
+    position: absolute;
+    border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
+  }
+
+  .barderecherche input {
+    flex: 1;
+  }
+
+  button[name^="Rechercher"] {
+   display: none;
+  }
+
+  .barderecherche .fas.fa-search {
+    display: inline-flex;
+    border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
+    color: white;
+    margin-left: -0.7rem;
+    margin-top: 5px;
+    padding: 6px 6px;
+    height: 25px;
+    width: 30px;
+    background-color: #0984e3;
+    border: none;
+    align-items: center;
+  }
+
+  .hebergements {
+    display: flex;
+    flex: 1;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .suites {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .heberg a figure {
+    justify-content: center;
+    flex: 100%;
+    /* display: flex; */
+    flex-direction: column;
+    max-width: 332px;
+    height: 198px;
+  }
+
+  .heberg figure p {
+    padding: 0; 
+  }
+
+  .heberg {
+    justify-content: center;
+    width: auto;
+    display: block;
+  }
+
+  aside {
+    flex: 1;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    display: block;
+  }
+
+  .les_plus_populaires {
+    width: auto;
+    height: auto;
+    min-width: 375px;
+    flex: 100%;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    /* align-items: center; */
+  }
+
+  .pop a {
+    display: flex;
+    margin-left: 0;
+    width: auto;
+    justify-content: flex-start;
+  }
+  
+
+  #les_plus_pop {
+    display: flex;
+    
+  }
+
+  .fas.fa-chart-line {
+    justify-content: flex-end;
+    padding: 0 0 0 100px;
+  }
+
+  #les_plus_pop h3 {
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+
+  .pop {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+
+  .pop a figure {
+    display: flex;
+    flex: 100%;
+    margin-top: 1rem;
+    max-width: 375px;
+    height: 147px;
+  }
+
+  pop  img {
+    width: 100%;
+  }
+
+  .activites {
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+
+  .nature {
+    flex-direction: column;
+  }
+  
+  #titre_activites{
+    padding-bottom: 0rem;
+  }
+
+  .nature a figure {
+    align-items: center;
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    width: 332px;
+    height: 191px;
+  }
+
+  .nature a {
+    max-width: 332px;
+  }
+
+  .nature figure {
+    max-width: 332px;
+  }
+
+  .image_1, .image_2, .photo_1, .photo_2, .photo_3, .photo_4 {
+    max-width: 354px;
+  }
+
+  .image_1 figure {
+    width: 332px;
+    flex-wrap: wrap;
+    height: 191px;
+    margin-bottom: 0.5rem;
+    border: 1px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px lightgrey;
+  }
+
+  .image_2 figure {
+    width: auto;
+    flex-wrap: wrap;
+    height: 191px;
+    margin-bottom: 0.5rem;
+    border: 1px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px lightgrey;
+  }
+
+  .image_1 {
+    height: auto;
+    padding: 0 0 0 0;
+    width: auto; 
+  }
+
+  .image_2 {
+    height: auto;
+    padding: 0 0 0 0;
+    width: auto;
+  }
+
+  .colonne {
+    width: 375px;
+    height: 70%;
+  } 
+
+  figure.nature img {
+    background-size: 100% 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 133px;
+  }
+
+  .footer {
+    flex-direction: column;
+    flex: 1;
+    max-width: 375px;
+    height: 485px;
+    justify-content: center;
+  }
+}
+
