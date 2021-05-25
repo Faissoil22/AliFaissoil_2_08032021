@@ -67,7 +67,7 @@ nav.nav {
 
 
 .nav a {
-  padding: 40px 30px 0;
+  padding: 28px 30px 0;
 }
 
 nav.nav ul {
@@ -312,7 +312,7 @@ i.fas.fa-search {
 
 #titre_heberg h2 {
   margin-left: 1.5rem;
-  padding: 1.5rem 0 0 1rem;
+  padding: 1.5rem 0 0 0rem;
   /* flex-grow: 1; */
 }
 
