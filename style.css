@@ -26,6 +26,11 @@ input {
   outline: none;
 }
 
+html {
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
 
 body {
   margin: 0;
@@ -35,7 +40,7 @@ body {
 
 
 .container {
-  margin: 0 0 0 0;
+  margin: auto;
 }
 
 
@@ -249,7 +254,7 @@ i.fas.fa-search {
   color: #1877f2;
 }
 
-.fa-star {
+.fas.fa-star {
   color: #1877f2;
 }
 
@@ -363,6 +368,8 @@ i.fas.fa-search {
 
 .aside {
  flex: 30%;
+ width: auto;
+ height: auto;
 } 
 
 .les_plus_populaires {
@@ -373,6 +380,8 @@ i.fas.fa-search {
   margin-left: 1rem;
   margin-right: 1.5rem;
   height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 #les_plus_pop {
@@ -687,6 +696,7 @@ figure.nature p {
     flex-direction: column;
     height: auto;
     width: auto;
+    margin: auto;
     /* max-width: 375px;
     min-width: 375px; */
   }
@@ -1397,6 +1407,11 @@ figure.nature p {
    flex-direction: row;
   }
 
+  .les_plus_populaires {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   
  .image_1, .colonne_1, .image_2, .image_3, .colonne_2, .image_4, .image_5, .image_6 {
     margin: 0;
@@ -1430,6 +1445,78 @@ figure.nature p {
     align-items: unset;
   }
 
+  .image_3 {
+    flex: 30%;
+    padding: 0 0 0 40px;
+  }
+
+  .image_6 {
+    flex: 30%;
+    padding: 0 0 0 40px;
+  }
+
+  .activites_2 {
+    padding-top: 50px;
+  }
+
+  .activites_1, .activites_2, .colonne_1, .colonne_2 {
+    display: flex;
+    flex-direction: row;
+    align-items: unset;
+  }
+
+  .activites {
+    margin-top: 65px 0 0 0;
+    align-items: center;
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+  .nature {
+    Width: auto;
+    height: auto;
+    flex-flow: row wrap;
+    background-color: #fff;
+    justify-content: center;
+  }
+  .activites img {
+    width: 100%;
+    height: 148px;
+    vertical-align: middle;
+    object-fit: cover;
+  }
+  .activites_1, .activites_2 {
+    display: flex;
+  }
+
+  .nature a figure {
+    align-items: center;
+    flex-direction: column;
+    width: 222px;
+    height: 202px;
+    flex: 33%;
+  }
+
+  .activites_2 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .activites_1 {
+    padding: 0;
+    margin: 0;
+    padding: 0 0 0 20px;
+  }
+ 
+  .nature a {
+    max-width: 222px;
+  }
+
+  .nature figure {
+    max-width: 222px;
+    flex: 33%;
+  }
+
   .activites_2 {
     padding: 0;
     margin: 0;
@@ -1459,6 +1546,30 @@ figure.nature p {
 
 
 @media only screen and (min-width: 812px) and (max-width: 959.99px) { 
+
+  .hebergements {
+    width: 100%;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .pop {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+
+  .les_plus_populaires {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .suites {
+    max-width: 947px;
+    height: 625px;
+  }
+
 
   .activites {
     margin-top: 65px 0 0 0;
