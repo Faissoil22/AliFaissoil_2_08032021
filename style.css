@@ -60,9 +60,9 @@ nav.nav {
 }
 
 
-.nav a {
+/* .nav a {
   padding: 28px 30px 0;
-}
+} */
 
 nav.nav ul {
   display: flex;
@@ -169,7 +169,7 @@ i.fas.fa-search {
 .filtres * {
   display: flex;
   margin-top: 0.5rem;
-  margin-left: 0.5rem; 
+  margin-left: 0.5rem;
 }
 
 .icones {
@@ -220,12 +220,13 @@ i.fas.fa-search {
   font-size: 0.8rem;
   height: 3.2rem;
   margin-left: -2rem;
-  padding-left: 1rem;
-  width: 13rem;
+  padding-left: 4rem;
+  padding-right: 1rem;
+  /* width: 13rem; */
   border-radius: 30px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-  position: relative;
+  /* position: relative; */
   z-index: -1;
 }
 
@@ -359,7 +360,6 @@ i.fas.fa-search {
   padding: 10px;
   align-content: space-around;
   vertical-align: center;
-  width: 100%;
 }
 
 /*La colonne les plus populaires*/
@@ -718,10 +718,6 @@ figure.nature p {
     white-space: nowrap;
   }
 
-  .nav a {
-    padding: 40px 0px 0px 40px;
-  }
-
   nav.nav ul {
     display: flex;
     width: 100%;
@@ -735,6 +731,7 @@ figure.nature p {
     width: 100%;
     text-align: center;
     padding: 20px 0;
+    border-bottom: 2px solid blue;
   }
   
   a.activites-btn  {
@@ -752,13 +749,13 @@ figure.nature p {
   }
 
   a.hebergement-btn {
-    color: #0065fc;
+    /* color: #0065fc;
     font-weight: bold;
     border-width: 2px;
     border-bottom-style: solid;
-    border-bottom-color: #0065fc;
+    border-bottom-color: #0065fc; */
     border-top-style: none;
-    padding-right: 0.1rem; 
+    /* padding-right: 0.1rem;  */
   }
 
   .recherche {
@@ -781,16 +778,16 @@ figure.nature p {
 
   .icones {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex: 1;
     width: auto;
     margin: 0;
   }
 
   .filtres * {
-    display: flex;
-    margin-right: 0;
-    margin-left: 0;
+    /* display: flex; */
+    /* margin-right: 0; */
+    /* margin-left: 0; */
   }
 
   .filtres {
@@ -837,8 +834,10 @@ figure.nature p {
 
   .hebergements {
     flex-direction: column-reverse;
-    height: auto;
+    /* height: auto;
     width: auto;
+    padding-left: 0px;
+    padding-right: 0px; */
   }
 
   .suites {
@@ -866,13 +865,11 @@ figure.nature p {
 
   .heberg  figure {
     justify-content: center;
-    flex: 33%;
     flex-direction: column;
-    width: 90%;
     height: 198px;
     box-shadow: 1px 1px 1px 1px lightgrey;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .heberg figure p {
@@ -885,7 +882,7 @@ figure.nature p {
     width: auto;
     /* display: block; */
     margin: 0;
-    padding: 0;
+    padding: 0 20px 0 20px;
     align-items: center;
   }
 
@@ -959,10 +956,10 @@ figure.nature p {
     margin-left: 0px;
     margin-right: 0px;
     flex-direction: column;
-    width: 90%;
     height: auto;
     justify-content: center;
-    padding: 0 20px 0 20px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .nature {
@@ -970,6 +967,7 @@ figure.nature p {
     margin: 0;
     padding: 0;
     align-items: center;
+    padding: 0 20px 0 20px;
   }
   
   #titre_activites{
@@ -1072,7 +1070,7 @@ figure.nature p {
   }
 }
 
-@media only screen and (min-width: 667,01px) and (max-width: 767.99px) { 
+@media only screen and (min-width: 667.01px) and (max-width: 767.99px) { 
 
   body {
     margin: 0;
@@ -1107,6 +1105,8 @@ figure.nature p {
     width: 100%;
     flex-direction: column-reverse;
     flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .suites {
@@ -1219,6 +1219,8 @@ figure.nature p {
     width: 100%;
     height: auto;
     justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .nature {
@@ -1328,7 +1330,7 @@ figure.nature p {
   }
 
   .image_1, .colonne_1, .image_2, .image_3, .colonne_2, .image_4, .image_5, .image_6 {
-    justify-items: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     width: 100%;
