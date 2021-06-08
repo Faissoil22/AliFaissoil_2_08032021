@@ -26,11 +26,6 @@ input {
   outline: none;
 }
 
-html {
-  margin: auto;
-  width: 100%;
-  height: auto;
-}
 
 body {
   margin: 0;
@@ -276,7 +271,6 @@ i.fas.fa-search {
   height: 2rem;
   width: 2rem;
   min-height: 2rem;
-  min-width: 2rem;
   border: solid 1px #d9d9d9;
   border-radius: 100%;
   display: flex;
@@ -306,7 +300,6 @@ i.fas.fa-search {
 }
 
 .suites {
-  /* max-width: 885px; */
   height: 625px;
   flex: 70%;
 }
@@ -329,7 +322,6 @@ i.fas.fa-search {
 }
 
 .heberg a figure {
-  /* max-width: 249px; */
   height: 204px;
   margin-left: 1rem;
   margin-top: 1rem;
@@ -497,7 +489,6 @@ figure.nature p {
 
 .image_1 figure {
   flex: 100%;
-  /* max-width: 301px; */
   height: 450px;
   margin-top: 1rem;
   border: 1px;
@@ -621,7 +612,6 @@ figure.nature p {
 
 .image_4 figure {
   flex: 25%;
-  /* max-width: 302px; */
   height: 452px;
   margin-top: 1rem;
   border: 1px;
@@ -643,7 +633,6 @@ figure.nature p {
 
 .image_5 figure {
   flex: 25%;
-  /* max-width: 306px; */
   height: 199px;
   margin-top: 1rem;
   border: 1px;
@@ -666,7 +655,6 @@ figure.nature p {
 
 .image_6 figure {
   flex: 25%;
-  /* max-width: 308px; */
   height: 217px;
   margin-top: 1rem;
   border: 1px;
@@ -696,7 +684,7 @@ figure.nature p {
   padding-bottom: 1.2rem;
 }
 
-@media only screen and (max-width: 666.99px)  {
+@media only screen and (max-width: 667px)  {
 
   body {
    margin: 0;
@@ -706,19 +694,15 @@ figure.nature p {
   .container {
     flex-direction: column;
     height: auto;
-    width: auto;
-    margin: auto;
-    /* max-width: 375px;
-    min-width: 375px; */
+    width: 100%;
+    margin: 0;
   }
   
   .menu {
     display: flex;
     flex-direction: column;
     margin: 0;
-    width: auto;
-    /* max-width: 375px;
-    min-width: 375px; */
+    width: 100%;
   }
 
   .logo {
@@ -780,10 +764,7 @@ figure.nature p {
   .recherche {
     flex-flow: row wrap;
     width: auto;
-    /* max-width: 375px;
-    min-width: 375px; */
     height: auto;
-    
   }
 
   .trouver {
@@ -804,6 +785,12 @@ figure.nature p {
     flex: 1;
     width: auto;
     margin: 0;
+  }
+
+  .filtres * {
+    display: flex;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .filtres {
@@ -852,8 +839,6 @@ figure.nature p {
     flex-direction: column-reverse;
     height: auto;
     width: auto;
-    /* max-width: 375px;
-    min-width: 375px; */
   }
 
   .suites {
@@ -875,13 +860,19 @@ figure.nature p {
     padding: 0;
   }
 
-  .heberg a figure {
+  .heberg a {
+    width: 100%;
+  }
+
+  .heberg  figure {
     justify-content: center;
     flex: 33%;
     flex-direction: column;
-    /* max-width: 332px; */
+    width: 90%;
     height: 198px;
     box-shadow: 1px 1px 1px 1px lightgrey;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .heberg figure p {
@@ -894,7 +885,7 @@ figure.nature p {
     width: auto;
     /* display: block; */
     margin: 0;
-    padding: 0 0 0 5px;
+    padding: 0;
     align-items: center;
   }
 
@@ -906,8 +897,6 @@ figure.nature p {
   .aside {
     flex: 1;
     width: auto;
-    /* max-width: 375px;
-    min-width: 375px; */
     height: auto;
     justify-content: center;
     display: block;
@@ -916,7 +905,6 @@ figure.nature p {
   .les_plus_populaires {
     width: auto;
     height: auto;
-    /* max-width: 375px; */
     flex: 100%;
     flex-direction: column;
     margin: 0 0 1.5rem 0;
@@ -926,7 +914,6 @@ figure.nature p {
     display: flex;
     margin-left: 0;
     width: auto;
-    /* justify-content: flex-start; */
     flex-direction: column;
     align-items: center;
   }
@@ -960,21 +947,22 @@ figure.nature p {
     display: flex;
     flex: 100%;
     margin-top: 1rem;
-    /* max-width: 375px; */
     height: 147px;
   }
 
-  pop  img {
+  .pop  img {
     width: 100%;
   }
 
   .activites {
     display: flex;
-    margin: 20px 0 0 20px;
+    margin-left: 0px;
+    margin-right: 0px;
     flex-direction: column;
-    width: 89%;
+    width: 90%;
     height: auto;
     justify-content: center;
+    padding: 0 20px 0 20px;
   }
 
   .nature {
@@ -1073,7 +1061,6 @@ figure.nature p {
     flex-direction: column;
     flex: 1;
     width: auto;
-    /* min-width: 375px; */
     height: auto;
     text-align: left;
     padding: 12px 0 0 12px;
@@ -1085,7 +1072,7 @@ figure.nature p {
   }
 }
 
-@media only screen and (min-width: 667px) and (max-width: 767.99px) { 
+@media only screen and (min-width: 667,01px) and (max-width: 767.99px) { 
 
   body {
     margin: 0;
@@ -1097,6 +1084,8 @@ figure.nature p {
     margin: auto;
     height: auto;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .menu {
@@ -1143,7 +1132,6 @@ figure.nature p {
     justify-content: center;
     flex: 30%;
     flex-direction: row;
-    /* max-width: 250px; */
     height: 198px;
     box-shadow: 1px 1px 1px 1px lightgrey;
   }
@@ -1169,7 +1157,6 @@ figure.nature p {
   .aside {
     flex: 1;
     width: 100%;
-    /* min-width: 667px; */
     height: auto;
     justify-content: center;
   }
@@ -1177,7 +1164,6 @@ figure.nature p {
   .les_plus_populaires {
     width: 100%;
     height: auto;
-    /* min-width: 667px; */
     flex: 100%;
     flex-direction: column;
     margin: 0 0 1.5rem 0;
@@ -1206,11 +1192,11 @@ figure.nature p {
     justify-content: left;
     flex-grow: 1;
     padding: 10px 0 0 10px;
-    max-width: 201px;
+    width: 30%;
   }
 
   .pop {
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -1220,7 +1206,6 @@ figure.nature p {
     display: flex;
     flex: 100%;
     margin-top: 1rem;
-    /* max-width: 667px; */
     height: 147px;
   }
 
@@ -1229,9 +1214,9 @@ figure.nature p {
   }
 
   .activites {
-    margin: 65px 0 0 20px;
+    margin: 65px 0 0 0px;
     flex-direction: column;
-    width: auto;
+    width: 100%;
     height: auto;
     justify-content: center;
   }
@@ -1287,7 +1272,7 @@ figure.nature p {
   }
 
   .image_2 figure {
-    width: auto;
+    width: 100%;
     flex-wrap: wrap;
     height: 191px;
     margin-bottom: 0.5rem;
@@ -1310,7 +1295,7 @@ figure.nature p {
     height: auto;
     margin: 0;
     padding: 0 0 0 25px;
-    width: auto; 
+    width: 100%; 
   }
 
   .image_4 {
@@ -1320,7 +1305,7 @@ figure.nature p {
   .image_2 {
     height: auto;
     padding: 0 0 0 0;
-    width: auto;
+    width: 100%;
   }
 
   .image_3, .image_6 {
@@ -1372,7 +1357,7 @@ figure.nature p {
   }
 } 
 
-@media only screen and (min-width: 768px) and (max-width: 1365,99px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
 
   body {
     margin: 0;
@@ -1383,13 +1368,13 @@ figure.nature p {
   .container {
     margin: auto;
     height: auto;
-    width: auto;
+    width: 100%;
   }
 
   .menu {
     display: flex;
     margin: 0;
-    width: auto;
+    width: 100%;
   }
 
   .logo {
@@ -1405,11 +1390,10 @@ figure.nature p {
     width: 100%;
     flex-direction: column-reverse;
     flex-wrap: wrap;
-    width: auto;
   }
 
   .suites {
-    width: auto;
+    width: 100%;
     height: auto;
     flex-flow: row wrap;
     background-color: #fff;
@@ -1421,6 +1405,8 @@ figure.nature p {
   .pop {
    display: flex;
    flex-direction: row;
+   margin-left: 0px;
+   margin-right: 0px;
   }
 
   .les_plus_populaires {
@@ -1438,7 +1424,7 @@ figure.nature p {
   .activites {
     margin-top: 65px 0 0 0;
     align-items: center;
-    width: auto;
+    width: 100%;
     height: auto;
     justify-content: center;
   }
@@ -1496,7 +1482,7 @@ figure.nature p {
   .activites {
     margin-top: 65px 0 0 0;
     align-items: center;
-    width: auto;
+    width: 100%;
     height: auto;
     justify-content: center;
   }
@@ -1589,7 +1575,7 @@ figure.nature p {
   .footer {
     flex-direction: row;
     flex: 1;
-    width: auto;
+    width: 100%;
     height: auto;
     text-align: left;
     padding: 12px 0 0 12px;
