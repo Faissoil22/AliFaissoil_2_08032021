@@ -73,6 +73,9 @@ a.activites-btn  {
   color: #000000;
   padding-left: 20px;
 }
+li {
+  border-bottom-style: none;
+}
 
 a.inscription  {
   color: #0065FC;
@@ -90,6 +93,8 @@ a.hebergement-btn {
   border-top-color: #0065fc;
   justify-content: space-around;
   transition: all 0.5s ease;
+  padding-top: 28px;
+  width: 50%;
 }
 
 a.activites-btn :hover {
@@ -700,9 +705,7 @@ figure.nature p {
   
   .menu {
     display: flex;
-    flex-direction: column;
-    margin: 0;
-    width: 100%;
+    flex-wrap: wrap;
   }
 
   .logo {
@@ -721,23 +724,41 @@ figure.nature p {
   nav.nav ul {
     display: flex;
     width: 100%;
+    flex: 1;
     justify-content: space-between;
     padding-top: 20px;
     order: 1;
     flex-grow: 1;
+    margin-right: 0;
   }
 
-  nav.nav li {
-    width: 100%;
+  .nav a {
+    flex: 50%;
+  }
+
+   .li-1 {
     text-align: center;
-    padding: 20px 0;
-    border-bottom: 2px solid blue;
+    padding: 10px 0;
+    border-top-style: none;
+    border-bottom: 2px solid #0065fc;
+    flex: 50%;
+  }
+
+  .li-2 {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #f2f2f2;
+    flex: 50%;
   }
   
   a.activites-btn  {
     color: #000000;
     padding-right: 20px;
+    order: 2;
+    flex: 0 1
   }
+
+  
   
   a.inscription  {
     align-self: flex-end;
@@ -749,19 +770,14 @@ figure.nature p {
   }
 
   a.hebergement-btn {
-    /* color: #0065fc;
-    font-weight: bold;
-    border-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: #0065fc; */
     border-top-style: none;
-    /* padding-right: 0.1rem;  */
   }
 
   .recherche {
     flex-flow: row wrap;
     width: auto;
     height: auto;
+    padding-top: 20px;
   }
 
   .trouver {
@@ -778,16 +794,9 @@ figure.nature p {
 
   .icones {
     display: flex;
-    /* flex-direction: column; */
     flex: 1;
     width: auto;
     margin: 0;
-  }
-
-  .filtres * {
-    /* display: flex; */
-    /* margin-right: 0; */
-    /* margin-left: 0; */
   }
 
   .filtres {
@@ -834,10 +843,6 @@ figure.nature p {
 
   .hebergements {
     flex-direction: column-reverse;
-    /* height: auto;
-    width: auto;
-    padding-left: 0px;
-    padding-right: 0px; */
   }
 
   .suites {
@@ -918,18 +923,22 @@ figure.nature p {
 
   #les_plus_pop {
     display: flex;
+    justify-content: space-between;
     margin: 0;
-    padding: 0;
+    padding: 40px;
   }
 
-  .fas.fa-chart-line {
+  i.fas.fa-chart-line {
     justify-content: flex-end;
-    padding: 10px 0 0 100px;
+    padding: 10px 0 0 10px;
+    margin-right: 0;
+    margin-left: 50px;
   }
 
   #les_plus_pop h3 {
-    justify-content: left;
+    justify-content: flex-start;
     flex-grow: 1;
+    margin-left: 0;
     padding: 10px 0 0 10px;
     max-width: 201px;
   }
@@ -1414,6 +1423,11 @@ figure.nature p {
   .les_plus_populaires {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .fas.fa-chart-line {
+    justify-content: flex-end;
+    margin-left: 30px;
   }
 
   
