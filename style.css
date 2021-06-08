@@ -125,6 +125,10 @@ a.activites-btn :hover {
   margin: 15px;
   margin-left: 1rem;
 }
+form {
+  display: flex;
+}
+
 
 i.fas.fa-search {
   display: none;
@@ -140,11 +144,11 @@ i.fas.fa-search {
 }
 
 .barderecherche input {
-  width: 229px;
+  width: 100%;
   padding: 0.5em;
   border: 1px solid #f2f2f2;
   margin-left: -0.2rem;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   height: 37px;
   background-color: white;
 }
@@ -158,7 +162,7 @@ i.fas.fa-search {
   color: white;
   padding: 0.5em;
   margin-left: -0.2rem;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   height: 2.2rem;
   background-color: #0984e3;
   border: none;
@@ -302,7 +306,7 @@ i.fas.fa-search {
 }
 
 .suites {
-  max-width: 885px;
+  /* max-width: 885px; */
   height: 625px;
   flex: 70%;
 }
@@ -325,7 +329,7 @@ i.fas.fa-search {
 }
 
 .heberg a figure {
-  max-width: 249px;
+  /* max-width: 249px; */
   height: 204px;
   margin-left: 1rem;
   margin-top: 1rem;
@@ -340,6 +344,7 @@ i.fas.fa-search {
 .heberg figure {
   padding: 5px;
   margin: 20px;
+  width: 90%%;
 }
 
 .heberg figure p {
@@ -362,6 +367,7 @@ i.fas.fa-search {
   padding: 10px;
   align-content: space-around;
   vertical-align: center;
+  width: 100%;
 }
 
 /*La colonne les plus populaires*/
@@ -402,7 +408,7 @@ i.fas.fa-search {
 .pop figure {
   display: flex;
   margin: 15px;
-  max-width: 343px;
+  width: 90%;
   height: 145px;
   padding: 5px;
   border-radius: 15px;
@@ -416,7 +422,7 @@ i.fas.fa-search {
 
 .pop a figure img {
   min-height: 100%;
-  max-width: 33%;
+  width: 33%;
 }
 
 .pop img {
@@ -459,14 +465,12 @@ i.fas.fa-search {
 .nature {
   flex: 4;
   height: auto;
-}
-
-figure.nature {
   display: flex;
   flex: 4;
   box-sizing: border-box;
   padding: 0 5px;
 }
+
 
 .figure.nature p {
   vertical-align: center;
@@ -492,8 +496,8 @@ figure.nature p {
 }
 
 .image_1 figure {
-  flex: 4;
-  max-width: 301px;
+  flex: 100%;
+  /* max-width: 301px; */
   height: 450px;
   margin-top: 1rem;
   border: 1px;
@@ -511,31 +515,36 @@ figure.nature p {
 
 
 .image_3 {
+  flex: 25%;
   height: 166px;
 }
 
 .image_5 {
   height: 197px;
+  flex: 25%;
 }
 
 .image_6 {
   height: 206px;
+  flex: 25%;
 }
 
 .activites_1 {
   display: flex;
+  flex: 50%;
 }
 
 .activites_2 {
   display: flex;
+  flex: 50%;
 }
 
-.image_5, .image_6, .image_4 {
+.image_4 {
   flex: 25%;
 }
 
 .image_2 figure {
-  max-width: 308px;
+  width: 100%;
   height: 239px;
   margin-top: 1rem;
   border: 1px;
@@ -569,7 +578,7 @@ figure.nature p {
 
 
 .image_3 figure {
-  max-width: 308px;
+  width: 100%;
   height: 167px;
   margin-top: 1rem;
   border: 1px;
@@ -586,11 +595,13 @@ figure.nature p {
 }
 
 .colonne_1 {
+  flex: 25%;
   flex-direction: column;
   padding: 0 30px 0 40px;
 }
 
 .colonne_2 {
+  flex: 25%;
   flex-direction: column;
   padding: 0 0 0 40px;
 }
@@ -610,7 +621,7 @@ figure.nature p {
 
 .image_4 figure {
   flex: 25%;
-  max-width: 302px;
+  /* max-width: 302px; */
   height: 452px;
   margin-top: 1rem;
   border: 1px;
@@ -632,7 +643,7 @@ figure.nature p {
 
 .image_5 figure {
   flex: 25%;
-  max-width: 306px;
+  /* max-width: 306px; */
   height: 199px;
   margin-top: 1rem;
   border: 1px;
@@ -655,7 +666,7 @@ figure.nature p {
 
 .image_6 figure {
   flex: 25%;
-  max-width: 308px;
+  /* max-width: 308px; */
   height: 217px;
   margin-top: 1rem;
   border: 1px;
@@ -788,6 +799,8 @@ figure.nature p {
   }
 
   .icones {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     width: auto;
     margin: 0;
@@ -796,6 +809,15 @@ figure.nature p {
   .filtres {
     flex-direction: column;
   }
+
+  .filtres .icones h2 {
+    justify-content: flex-start;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;
+  }
+
   .infonombredelogements {
     margin: 10px 0 10px 10px;
   }
@@ -818,7 +840,6 @@ figure.nature p {
     border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
     color: white;
     margin-left: -0.7rem;
-    margin-top: 5px;
     padding: 6px 6px;
     height: 25px;
     width: 30px;
@@ -858,7 +879,7 @@ figure.nature p {
     justify-content: center;
     flex: 33%;
     flex-direction: column;
-    max-width: 332px;
+    /* max-width: 332px; */
     height: 198px;
     box-shadow: 1px 1px 1px 1px lightgrey;
   }
@@ -948,11 +969,10 @@ figure.nature p {
   }
 
   .activites {
-    margin-top: 65px 0 0 0;
-    align-items: center;
+    display: flex;
+    margin: 20px 0 0 20px;
     flex-direction: column;
-    width: 100%;
-    /* max-width: 375px; */
+    width: 89%;
     height: auto;
     justify-content: center;
   }
@@ -971,12 +991,12 @@ figure.nature p {
   .nature a figure {
     align-items: center;
     flex-direction: column;
-    max-width: 332px;
+    width: 100%;
     height: 191px;
   }
 
   .nature a {
-    max-width: 332px;
+    width: 100%;
   }
 
   .activites_1 {
@@ -996,7 +1016,7 @@ figure.nature p {
   }
 
   .image_1 figure {
-    width: 332px;
+    width: 100%;
     flex-wrap: wrap;
     height: 191px;
     margin-bottom: 0.5rem;
@@ -1057,6 +1077,7 @@ figure.nature p {
     height: auto;
     text-align: left;
     padding: 12px 0 0 12px;
+    margin-top: 10px;
   }
 
   .footer li {
@@ -1076,14 +1097,12 @@ figure.nature p {
     margin: auto;
     height: auto;
     width: 100%;
-    min-width: 667px;
   }
 
   .menu {
     display: flex;
     margin: 0;
     width: 100%;
-    min-width: 667px;
   }
 
   .logo {
@@ -1099,7 +1118,6 @@ figure.nature p {
     width: 100%;
     flex-direction: column-reverse;
     flex-wrap: wrap;
-    min-width: 667px;
   }
 
   .suites {
@@ -1125,7 +1143,7 @@ figure.nature p {
     justify-content: center;
     flex: 30%;
     flex-direction: row;
-    max-width: 250px;
+    /* max-width: 250px; */
     height: 198px;
     box-shadow: 1px 1px 1px 1px lightgrey;
   }
@@ -1151,15 +1169,15 @@ figure.nature p {
   .aside {
     flex: 1;
     width: 100%;
-    min-width: 667px;
+    /* min-width: 667px; */
     height: auto;
     justify-content: center;
   }
 
   .les_plus_populaires {
-    width: auto;
+    width: 100%;
     height: auto;
-    min-width: 667px;
+    /* min-width: 667px; */
     flex: 100%;
     flex-direction: column;
     margin: 0 0 1.5rem 0;
@@ -1168,7 +1186,7 @@ figure.nature p {
   .pop a {
     display: flex;
     margin-left: 0;
-    width: auto;
+    width: 100%;
     justify-content: flex-start;
   }
   
@@ -1202,7 +1220,7 @@ figure.nature p {
     display: flex;
     flex: 100%;
     margin-top: 1rem;
-    max-width: 667px;
+    /* max-width: 667px; */
     height: 147px;
   }
 
@@ -1211,8 +1229,7 @@ figure.nature p {
   }
 
   .activites {
-    margin-top: 65px 0 0 0;
-    align-items: center;
+    margin: 65px 0 0 20px;
     flex-direction: column;
     width: auto;
     height: auto;
@@ -1225,7 +1242,7 @@ figure.nature p {
     box-sizing: border-box;
     padding: 0 5px;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
   }
   
   #titre_activites{
@@ -1234,12 +1251,12 @@ figure.nature p {
 
   .nature a figure {
     align-items: center;
-    width: 222px;
+    width: 100%;
     height: 191px;
   }
 
   .nature a {
-    max-width: 222px;
+    width: 90%;
   }
 
   .activites_1 {
@@ -1251,15 +1268,15 @@ figure.nature p {
   }
 
   .nature figure {
-    max-width: 222px;
+    width: 90%;
   }
 
   .image_1, .image_2, .photo_1, .photo_2, .photo_3, .photo_4 {
-    max-width: 222px;
+    width: 100%;
   }
 
   .image_1 figure {
-    width: 222px;
+    width: 100%;
     flex-wrap: wrap;
     height: 191px;
     margin-bottom: 0.5rem;
@@ -1281,7 +1298,6 @@ figure.nature p {
   }
 
   .activites_2, .activites_1 {
-    align-items: center;
     padding: 0;
     margin: 0;
   }
@@ -1327,15 +1343,15 @@ figure.nature p {
   }
 
   .image_1, .colonne_1, .image_2, .image_3, .colonne_2, .image_4, .image_5, .image_6 {
-    margin: 0 10px 0 10px;
-    padding: 0 10px 0px 10px;
     justify-items: center;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .activites_2, .activites_1 {
     flex-direction: column;
+    align-items: center;
   }
 
   .image_1 figure {
@@ -1349,14 +1365,14 @@ figure.nature p {
   .footer {
     flex-direction: row;
     flex: 1;
-    width: auto;
+    width: 100%;
     height: auto;
     text-align: left;
     padding: 12px 0 0 12px;
   }
 } 
 
-@media only screen and (min-width: 768px) and (max-width: 811.99px) {
+@media only screen and (min-width: 768px) and (max-width: 1365,99px) {
 
   body {
     margin: 0;
@@ -1414,8 +1430,9 @@ figure.nature p {
 
   
  .image_1, .colonne_1, .image_2, .image_3, .colonne_2, .image_4, .image_5, .image_6 {
-    margin: 0;
-    justify-items: center;
+   display: flex; 
+   margin: 0;
+   justify-items: center;
   }
 
   .activites {
@@ -1435,24 +1452,35 @@ figure.nature p {
   .nature a figure {
     align-items: center;
     flex-direction: column;
-    width: 222px;
+    width: 100%;
     height: 191px;
   }
 
-  .activites_1, .activites_2, .colonne_1, .colonne_2 {
+  .activites_1, .activites_2 {
     display: flex;
+    flex: 100%;
     flex-direction: row;
     align-items: unset;
   }
 
-  .image_3 {
-    flex: 30%;
-    padding: 0 0 0 40px;
+  .colonne_1, .colonne_2 {
+    display: flex;
+    flex-direction: row;
+    flex: 57%
   }
 
-  .image_6 {
-    flex: 30%;
-    padding: 0 0 0 40px;
+  .image_1 {
+    flex: 29%;
+  }
+
+  .image_3, .image_2, .image_1 {
+    flex: 29%;
+    padding: 5px;
+  }
+
+  .image_6, .image_5, .image_4 {
+    flex: 29%;
+    padding: 5px;
   }
 
   .activites_2 {
@@ -1473,9 +1501,11 @@ figure.nature p {
     justify-content: center;
   }
   .nature {
-    Width: auto;
+    display: flex;
+    flex-direction: column;
+    Width: 100%;
     height: auto;
-    flex-flow: row wrap;
+    flex-flow: row column;
     background-color: #fff;
     justify-content: center;
   }
@@ -1487,33 +1517,55 @@ figure.nature p {
   }
   .activites_1, .activites_2 {
     display: flex;
+    width: 100%;
+    flex: 1;
   }
 
   .nature a figure {
     align-items: center;
     flex-direction: column;
-    width: 222px;
+    width: 100%;
     height: 202px;
     flex: 33%;
   }
 
+  .activites_1 a, .activites_2 a, .image_4, .image_5, .image_6 {
+    height: 228px;
+  }
+
   .activites_2 {
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 1;
+    height: 228px;
   }
 
   .activites_1 {
+    display: flex;
+    flex-direction: row;
     padding: 0;
     margin: 0;
-    padding: 0 0 0 20px;
+    padding: 0;
+    width: 100%;
+    flex: 1;
+    height: 228px;
+  }
+  .colonne_1, .colonne_2 {
+    display: flex;
+    flex-direction: row;
+    height: 202px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
  
   .nature a {
-    max-width: 222px;
+    width: 100%;
   }
 
   .nature figure {
-    max-width: 222px;
     flex: 33%;
   }
 
@@ -1523,11 +1575,11 @@ figure.nature p {
   }
  
   .nature a {
-    max-width: 222px;
+    width: 100%;
   }
 
   .nature figure {
-    max-width: 222px;
+    width: 100%;
   }
   
   .footer {
@@ -1542,212 +1594,6 @@ figure.nature p {
     text-align: left;
     padding: 12px 0 0 12px;
   }
-}
-
-
-@media only screen and (min-width: 812px) and (max-width: 959.99px) { 
-
-  .hebergements {
-    width: 100%;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-    width: auto;
-  }
-
-  .pop {
-    display: flex;
-    flex-direction: row;
-    width: auto;
-  }
-
-  .les_plus_populaires {
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-
-  .suites {
-    max-width: 947px;
-    height: 625px;
-  }
-
-
-  .activites {
-    margin-top: 65px 0 0 0;
-    align-items: center;
-    width: auto;
-    height: auto;
-    justify-content: center;
-  }
-  .nature {
-    Width: auto;
-    height: auto;
-    flex-flow: row wrap;
-    background-color: #fff;
-    justify-content: center;
-  }
-  .activites img {
-    width: 100%;
-    height: 148px;
-    vertical-align: middle;
-    object-fit: cover;
-  }
-  .activites_1, .activites_2 {
-    display: flex;
-  }
-
-  .nature a figure {
-    align-items: center;
-    flex-direction: column;
-    width: 222px;
-    height: 202px;
-    flex: 33%;
-  }
-
-  /* .image_1 img {
-    width: 100%;
-    height: 148px;
-    vertical-align: middle;
-    object-fit: cover;
-  }
-
-  .image_2 img {
-    width: 100%;
-    height: 148px;
-    vertical-align: middle;
-    object-fit: cover;
-  }
-
-  .image_3 img {
-    width: 100%;
-    height: 148px;
-    vertical-align: middle;
-    object-fit: cover;
-  }
-
-  .image_4 img {
-    width: 100%;
-    height: 148px;
-    vertical-align: middle;
-    object-fit: cover;
-  }
-
-  .image_5 img {
-    width: 100%;
-    height: 148px;
-    vertical-align: middle;
-    object-fit: cover;
-  }
-
-  .image_6 img {
-    width: 100%;
-    height: 148px;
-    vertical-align: middle;
-    object-fit: cover;
-  } */
-
-  .image_3 {
-    flex: 30%;
-    padding: 0 0 0 40px;
-  }
-
-  .image_6 {
-    flex: 30%;
-    padding: 0 0 0 40px;
-  }
-
-  .activites_2 {
-    padding-top: 50px;
-  }
-
-  .activites_1, .activites_2, .colonne_1, .colonne_2 {
-    display: flex;
-    flex-direction: row;
-    align-items: unset;
-  }
-
-  .activites_2 {
-    padding: 0;
-    margin: 0;
-  }
-
-  .activites_1 {
-    padding: 0;
-    margin: 0;
-    padding: 0 0 0 20px;
-  }
- 
-  .nature a {
-    max-width: 222px;
-  }
-
-  .nature figure {
-    max-width: 222px;
-    flex: 33%;
-  }
-  .footer {
-    display: flex;
-    flex: 1;
-    width: auto;
-    height: auto;
-    text-align: left;
-    margin-top: 0;
-    padding: 12px 0 0 12px;
-  }
-}
-
-@media only screen and (min-width: 960px ) and (max-width: 1024px) {
-
-  .image_1 figure, .image_4 figure  {
-    width: 240px;
-    height: 450px;
-    margin-top: 1rem;
-    border: 1px;
-    border-radius: 15px;
-    background-color: #fff;
-    box-shadow: 1px 1px 1px lightgrey;
-  }
-
-  .image_2 figure, .image_3 figure, .image_5 figure, .image_6 figure {
-    width: 240px;
-    height: auto;
-    margin-top: 1rem;
-    border: 1px;
-    border-radius: 15px;
-    background-color: #fff;
-    box-shadow: 1px 1px 1px lightgrey;
-  }
-
-  .colonne_1 {
-    flex-direction: column;
-    padding: 0 0 0 10px;
-  }
-
-  .image_3 {
-    flex: 25%;
-    padding: 50px 0 0 0;
-  }
-
-  .image_4 {
-    flex: 25%;
-    height: 350px;
-    margin: 0 0 0 10px;
-  }
-
-  .colonne_2 {
-    flex-direction: column;
-    padding: 0 10px 0 10px;
-  }
-
-  .footer {
-    display: flex;
-    height: auto;
-    justify-content: space-around;
-    width: auto;
-    padding: 47px 0 76px 0;
-    margin-top: 60px;
-    box-sizing: border-box;
-    background-color: #f2f2f2;
-  } 
 }
 
 
