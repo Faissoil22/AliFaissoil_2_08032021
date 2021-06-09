@@ -404,10 +404,9 @@ i.fas.fa-search {
 
 .pop figure {
   display: flex;
-  margin: 15px;
+  margin: 10px;
   width: 90%;
   height: 145px;
-  padding: 5px;
   border-radius: 15px;
   background-color: #fff;
 }
@@ -483,7 +482,6 @@ figure.nature img {
 
 figure.nature p {
   padding-top: 1.7rem;
-  margin-left: 1rem;
 }
 
 
@@ -868,7 +866,7 @@ figure.nature p {
     width: 100%;
   }
 
-  .heberg  figure {
+  .heberg a figure {
     justify-content: center;
     flex-direction: column;
     height: 198px;
@@ -944,7 +942,7 @@ figure.nature p {
   }
 
   .pop {
-    width: auto;
+    width: 100%;
     height: auto;
     flex-direction: column;
   }
@@ -954,6 +952,8 @@ figure.nature p {
     flex: 100%;
     margin-top: 1rem;
     height: 147px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .pop  img {
@@ -997,9 +997,19 @@ figure.nature p {
   .activites_1 {
     flex-direction: column;
     padding-bottom: 25px;
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    width: 100%;
   }
+
+
   .activites_2 {
     flex-direction: column;
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    width: 100%;
   }
 
   .nature figure {
