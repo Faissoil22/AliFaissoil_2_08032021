@@ -35,7 +35,7 @@ body {
 
 
 .container {
-  margin: auto;
+  margin: 0 20px 0 20px;
 }
 
 
@@ -44,7 +44,7 @@ body {
 .logo {
   margin-top: 30px;
   flex: 1;
-  margin-left: 1rem;
+  margin-left: 16px;
 }
 
 .menu {
@@ -77,28 +77,36 @@ li {
   border-bottom-style: none;
 }
 
-a.inscription  {
+a.hebergement-btn  {
   color: #0065FC;
-  font-weight: 700;
-  padding-top: 30px;
-  padding-right: 0.5rem;
+  font-weight: bold;
 }
 
-a.hebergement-btn {
+a.inscription  {
+  color: #0065FC;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-right: 8px;
+}
+
+.li-1 :hover {
   color: #0065fc;
   font-weight: bold;
   border-width: 3px;
-  padding-left: 2rem;
+  padding-left: 32px;
   border-top-style: solid;
   border-top-color: #0065fc;
   justify-content: space-around;
-  transition: all 0.5s ease;
   padding-top: 28px;
   width: 50%;
 }
 
-a.activites-btn :hover {
+.li-2 :hover {
+  border-top-style: solid;
+  border-top-color: #0065fc;
   color: #0065fc;
+  padding-top: 28px;
+  width: 50%;
 }
 
 /*Moteur de recherche
@@ -109,21 +117,21 @@ a.activites-btn :hover {
 }
 
 .trouver {
-  padding-left: 1rem;
+  padding-left: 16px;
 }
 
 .trouver p h3 h6 {
-  padding-top: 1em;
-  padding-left: 1rem;
-  font-size: 1.5em;
-  padding: 1.5em;
-  margin: 1rem auto;
+  padding-top: 16px;
+  padding-left: 16px;
+  font-size: 24px;
+  padding: 24px;
+  margin: 16px auto;
 }
 
 .barderecherche {
   display: inline-flex;
   margin: 15px;
-  margin-left: 1rem;
+  margin-left: 16px;
 }
 form {
   display: flex;
@@ -137,17 +145,17 @@ i.fas.fa-search {
 .barderecherche i.fas.fa-map-marker-alt {
   background-color: #f2f2f2;
   border-radius: 30% 0 0 30%;
-  padding: 1.5em;
+  padding: 15px;
   font-size: 10px;
-  height: 0.5rem;
-  margin-right: -0.2rem;
+  height: 8px;
+  margin-right: -3.2px;
 }
 
 .barderecherche input {
   width: 100%;
   padding: 0.5em;
   border: 1px solid #f2f2f2;
-  margin-left: -0.2rem;
+  margin-left: -3.2px;
   /* margin-top: 5px; */
   height: 37px;
   background-color: white;
@@ -158,12 +166,12 @@ i.fas.fa-search {
 }
 
 .barderecherche button {
-  border-radius: 0 0.7rem 0.7rem 0;
+  border-radius: 0 11.2px 11.2px 0;
   color: white;
-  padding: 0.5em;
-  margin-left: -0.2rem;
+  padding: 8px;
+  margin-left: -3.2px;
   /* margin-top: 5px; */
-  height: 2.2rem;
+  height: 35.2px;
   background-color: #0984e3;
   border: none;
 }
@@ -173,8 +181,13 @@ i.fas.fa-search {
 
 .filtres * {
   display: flex;
-  margin-top: 0.5rem;
-  margin-left: 0.5rem;
+  margin-left: 8px;
+}
+
+.filtres {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
 }
 
 .icones {
@@ -187,7 +200,7 @@ i.fas.fa-search {
 .filtres .icones h2 {
   justify-content: center;
   align-items: center;
-  margin-left: 0.5rem;
+  margin-left: 8px;
   cursor: pointer;
   transition-duration: 0.1s;
   font-weight: bold;
@@ -197,7 +210,7 @@ i.fas.fa-search {
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 5rem;
+  margin-left: 80px;
   list-style-type: none;
 }
 
@@ -205,13 +218,13 @@ i.fas.fa-search {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-right: -1rem;
-  margin-top: 0rem;
-  border: 0.09rem solid #f2f2f2;
-  font-size: 1rem;
+  margin-right: -16px;
+  margin-top: 0px;
+  border: 1.44px solid #f2f2f2;
+  font-size: 16px;
   border-radius: 50%;
-  height: 3rem;
-  width: 3rem;
+  height: 48px;
+  width: 48px;
   background-color: #deebff;
 }
 
@@ -221,17 +234,15 @@ i.fas.fa-search {
   justify-content: center;
   align-items: center;
   margin-top: 0;
-  border: 0.01rem solid #f2f2f2;
-  font-size: 0.8rem;
-  height: 3.2rem;
-  margin-left: -2rem;
-  padding-left: 4rem;
-  padding-right: 1rem;
-  /* width: 13rem; */
+  border: 0.16px solid #f2f2f2;
+  font-size: 12.8px;
+  height: 51.2px;
+  margin-left: -32px;
+  padding-left: 64px;
+  padding-right: 16px;
   border-radius: 30px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-  /* position: relative; */
   z-index: -1;
 }
 
@@ -259,36 +270,36 @@ i.fas.fa-search {
   color: #1877f2;
 }
 
-.fas.fa-star {
+.fa-star {
   color: #1877f2;
 }
 
-.fal.fa-star {
-  color: #332f2f;
+.inactive {
+  color: #e8e4e4;
 }
 
 .infonombredelogements {
   display: flex;
-  margin: 1rem;
-  margin-top: 2rem;
+  margin: 16px;
+  margin-top: 32px;
 }
 
 .infonombredelogements .fas {
-  height: 2rem;
-  width: 2rem;
-  min-height: 2rem;
+  height: 32px;
+  width: 32px;
+  min-height: 32px;
   border: solid 1px #d9d9d9;
   border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
+  margin-right: 16px;
 }
 
 .infonombredelogements p {
   flex: 1;
-  margin: 0.5rem;
-  padding-left: 0.2rem;
+  margin: 8px;
+  padding-left: 3.2px;
 }
 
 .bouton :hover button {
@@ -318,8 +329,8 @@ i.fas.fa-search {
 }
 
 #titre_heberg h2 {
-  margin-left: 1.5rem;
-  padding: 1.5rem 0 0 0rem;
+  margin-left: 24px;
+  padding: 24px 0 0 0;
 }
 
 .heberg {
@@ -329,8 +340,8 @@ i.fas.fa-search {
 
 .heberg a figure {
   height: 204px;
-  margin-left: 1rem;
-  margin-top: 1rem;
+  margin-left: 16px;
+  margin-top: 16px;
   border-radius: 15px;
   background-color: #fff;
 }
@@ -342,7 +353,7 @@ i.fas.fa-search {
 .heberg figure {
   padding: 5px;
   margin: 20px;
-  width: 90%%;
+  width: 90%;
 }
 
 .heberg figure p {
@@ -380,8 +391,7 @@ i.fas.fa-search {
   background-color: #f2f2f2;
   flex-direction: column;
   border-radius: 20px;
-  margin-left: 1rem;
-  margin-right: 1.5rem;
+  margin-left: 16px;
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -389,22 +399,16 @@ i.fas.fa-search {
 
 #les_plus_pop {
   display: flex;
-  padding-left: 1.2rem;
-  padding-top: 2rem;
-}
-
-#les_plus_pop h3 {
-  justify-content: flex-start;
-  flex-grow: 1;
+  padding-left: 19.2px;
 }
 
 .fas.fa-chart-line {
-  justify-content: flex-end;
+  margin-left: 50px;
 }
 
 .pop figure {
   display: flex;
-  margin: 10px;
+  margin: 30px 20px 20px 20px;
   width: 90%;
   height: 145px;
   border-radius: 15px;
@@ -432,7 +436,7 @@ i.fas.fa-search {
 .pop a figure figcaption {
   display: flex;
   flex-direction: column;
-  padding-left: 1rem;
+  padding-left: 16px;
 }
 
 .pop strong {
@@ -445,15 +449,15 @@ i.fas.fa-search {
 
 #plus {
   display: flex;
-  margin-left: 1rem;
-  margin-top: 2rem;
+  margin-left: 16px;
+  margin-top: 32px;
 }
 
 /*Les activités en nature*/
 
 #titre_activites {
   justify-content: flex-start;
-  margin-top: 2rem;
+  margin-top: 32px;
   padding-left: 10px;
 }
 
@@ -481,7 +485,7 @@ figure.nature img {
 }
 
 figure.nature p {
-  padding-top: 1.7rem;
+  padding-top: 27.2px;
 }
 
 
@@ -493,7 +497,7 @@ figure.nature p {
 .image_1 figure {
   flex: 100%;
   height: 450px;
-  margin-top: 1rem;
+  margin-top: 16px;
   border: 1px;
   border-radius: 15px;
   background-color: #fff;
@@ -540,7 +544,7 @@ figure.nature p {
 .image_2 figure {
   width: 100%;
   height: 239px;
-  margin-top: 1rem;
+  margin-top: 16px;
   border: 1px;
   border-radius: 15px;
   background-color: #fff;
@@ -556,7 +560,6 @@ figure.nature p {
 
 .image_2 {
   flex: 25%;
-  padding-top: 0 40px 42px 40px ;
 }
 
 .image_3 {
@@ -566,7 +569,6 @@ figure.nature p {
 
 .image_5 {
   flex: 25%;
-  padding-top: 0 0 0 40px ;
 }
 
 
@@ -574,7 +576,7 @@ figure.nature p {
 .image_3 figure {
   width: 100%;
   height: 167px;
-  margin-top: 1rem;
+  margin-top: 16px;
   border: 1px;
   border-radius: 15px;
   background-color: #fff;
@@ -616,7 +618,7 @@ figure.nature p {
 .image_4 figure {
   flex: 25%;
   height: 452px;
-  margin-top: 1rem;
+  margin-top: 16px;
   border: 1px;
   border-radius: 15px;
   background-color: #fff;
@@ -637,7 +639,7 @@ figure.nature p {
 .image_5 figure {
   flex: 25%;
   height: 199px;
-  margin-top: 1rem;
+  margin-top: 16px;
   border: 1px;
   border-radius: 15px;
   background-color: #fff;
@@ -646,7 +648,7 @@ figure.nature p {
 
 .image_6 {
   flex: 25%;
-  padding-top: 1.5rem;
+  padding-top: 24px;
 }
 
 .image_6 img {
@@ -659,7 +661,7 @@ figure.nature p {
 .image_6 figure {
   flex: 25%;
   height: 217px;
-  margin-top: 1rem;
+  margin-top: 16px;
   border: 1px;
   border-radius: 15px;
   background-color: #fff;
@@ -680,14 +682,18 @@ figure.nature p {
 }
 
 .liens {
-  padding-top: 1.5rem;
+  padding-top: 24px;
 }
 
 .footer li {
-  padding-bottom: 1.2rem;
+  padding-bottom: 19.2px;
 }
 
-@media only screen and (max-width: 667px)  {
+
+
+
+
+@media only screen and (max-width: 667.99px)  {
 
   body {
    margin: 0;
@@ -798,12 +804,16 @@ figure.nature p {
   }
 
   .filtres {
+    display: unset;
     flex-direction: column;
+  }
+  .bouton {
+    margin-top: 20px;
   }
 
   .filtres .icones h2 {
     justify-content: flex-start;
-    margin-left: 0.5rem;
+    margin-left: 8px;
     cursor: pointer;
     transition-duration: 0.1s;
     font-weight: bold;
@@ -815,7 +825,7 @@ figure.nature p {
 
   .barderecherche button {
     position: absolute;
-    border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
+    border-radius: 11.2px 11.2px 11.2px 11.2px;
   }
 
   .barderecherche input {
@@ -828,15 +838,16 @@ figure.nature p {
 
   .barderecherche .fas.fa-search {
     display: inline-flex;
-    border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
+    border-radius: 11.2px 11.2px 11.2px 11.2px;
     color: white;
-    margin-left: -0.7rem;
+    margin-left: -11.2px;
     padding: 6px 6px;
     height: 25px;
     width: 30px;
     background-color: #0984e3;
     border: none;
     align-items: center;
+    justify-content: center;
   }
 
   .hebergements {
@@ -873,6 +884,7 @@ figure.nature p {
     box-shadow: 1px 1px 1px 1px lightgrey;
     margin-left: 0;
     margin-right: 0;
+    width: 97%;
   }
 
   .heberg figure p {
@@ -882,10 +894,8 @@ figure.nature p {
   .heberg {
     flex-direction: column;
     justify-content: center;
-    width: auto;
-    /* display: block; */
     margin: 0;
-    padding: 0 20px 0 20px;
+    padding: 0 15px 0 15px;
     align-items: center;
   }
 
@@ -907,7 +917,7 @@ figure.nature p {
     height: auto;
     flex: 100%;
     flex-direction: column;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 24px 0;
   }
 
   .pop a {
@@ -948,9 +958,10 @@ figure.nature p {
   }
 
   .pop a figure {
+    width: 95%;
     display: flex;
     flex: 100%;
-    margin-top: 1rem;
+    margin-top: 16px;
     height: 147px;
     margin-left: 0;
     margin-right: 0;
@@ -1024,7 +1035,7 @@ figure.nature p {
     width: 100%;
     flex-wrap: wrap;
     height: 191px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
     border: 1px;
     border-radius: 15px;
     background-color: #fff;
@@ -1035,7 +1046,7 @@ figure.nature p {
     width: auto;
     flex-wrap: wrap;
     height: 191px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
     border: 1px;
     border-radius: 15px;
     background-color: #fff;
@@ -1089,7 +1100,8 @@ figure.nature p {
   }
 }
 
-@media only screen and (min-width: 667.01px) and (max-width: 767.99px) { 
+/* Sous chrome 667.01 est arrondi à 667 alors que Firefox il arrondit pas les valeurs*/
+@media only screen and (min-width: 668px ) and  (max-width: 767.99px) { 
 
   body {
     margin: 0;
@@ -1134,7 +1146,6 @@ figure.nature p {
     flex-flow: row wrap;
     background-color: #fff;
     justify-content: center;
-    padding-right: 0;
   }
 
   #titre_heberg  {
@@ -1185,7 +1196,7 @@ figure.nature p {
     height: auto;
     flex: 100%;
     flex-direction: column;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 24px 0;
   }
 
   .pop a {
@@ -1224,7 +1235,7 @@ figure.nature p {
   .pop a figure {
     display: flex;
     flex: 100%;
-    margin-top: 1rem;
+    margin-top: 16px;
     height: 147px;
   }
 
@@ -1285,7 +1296,7 @@ figure.nature p {
     width: 100%;
     flex-wrap: wrap;
     height: 191px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
     border: 1px;
     border-radius: 15px;
     background-color: #fff;
@@ -1296,7 +1307,7 @@ figure.nature p {
     width: 100%;
     flex-wrap: wrap;
     height: 191px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
     border: 1px;
     border-radius: 15px;
     background-color: #fff;
@@ -1378,7 +1389,7 @@ figure.nature p {
   }
 } 
 
-@media only screen and (min-width: 768px) and (max-width: 1300px) {
+@media only screen  and (min-width: 768px) and (max-width: 1300px) {
 
   body {
     margin: 0;
@@ -1448,7 +1459,7 @@ figure.nature p {
   }
 
   .activites {
-    margin-top: 65px 0 0 0;
+    margin: 65px 0 0 0;
     align-items: center;
     width: 100%;
     height: auto;
@@ -1517,7 +1528,7 @@ figure.nature p {
     flex-direction: column;
     Width: 100%;
     height: auto;
-    flex-flow: row column;
+    flex-flow: column row ;
     background-color: #fff;
     justify-content: center;
   }
@@ -1606,7 +1617,7 @@ figure.nature p {
     text-align: left;
     padding: 12px 0 0 12px;
   }
-}
+} 
 
 
   
