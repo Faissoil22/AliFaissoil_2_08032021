@@ -319,14 +319,12 @@ i.fas.fa-search {
 .suites {
   height: 625px;
   flex: 70%;
-}
-
-.suites {
   background-color: #f2f2f2;
   flex-wrap: wrap;
   border-radius: 20px;
   padding-right: 30px;
 }
+
 
 #titre_heberg h2 {
   margin-left: 24px;
@@ -351,9 +349,10 @@ i.fas.fa-search {
 }
 
 .heberg figure {
+  display: flex;
   padding: 5px;
   margin: 20px;
-  width: 90%;
+  flex-direction: column;
 }
 
 .heberg figure p {
@@ -362,7 +361,6 @@ i.fas.fa-search {
 }
 
 .heberg  img {
-  display: flex;
   justify-content: center;
   object-fit: cover;
   width: 100%;
@@ -693,7 +691,7 @@ figure.nature p {
 
 
 
-@media only screen and (max-width: 667.99px)  {
+@media only screen and (max-width: 667.98px)  {
 
   body {
    margin: 0;
@@ -1101,7 +1099,7 @@ figure.nature p {
 }
 
 /* Sous chrome 667.01 est arrondi à 667 alors que Firefox il arrondit pas les valeurs*/
-@media only screen and (min-width: 668px ) and  (max-width: 767.99px) { 
+@media only screen and (min-width: 668px ) and  (max-width: 767.98px) { 
 
   body {
     margin: 0;
@@ -1146,6 +1144,7 @@ figure.nature p {
     flex-flow: row wrap;
     background-color: #fff;
     justify-content: center;
+    padding: 0;
   }
 
   #titre_heberg  {
@@ -1161,12 +1160,17 @@ figure.nature p {
   .heberg a figure {
     justify-content: center;
     flex: 30%;
-    flex-direction: row;
+    flex-direction: column;
     height: 198px;
     box-shadow: 1px 1px 1px 1px lightgrey;
     margin-left: unset;
     margin-right: unset;
   }
+
+  .heberg a {
+    flex: 30%;
+    padding: 0 10px;
+}
 
   .heberg figure p {
     padding: 0; 
@@ -1436,11 +1440,32 @@ figure.nature p {
   .suites {
    padding-right: 0px;
   }
+
+  .heberg figure {
+    flex: 32%;
+    margin: 0;
+    box-shadow: 1px 1px 1px lightgrey;
+  }
+
+  .heberg a {
+    flex: 30%;
+    padding: 0 5px;
+  }
+
+  .heberg a figure {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
   .pop {
    display: flex;
    flex-direction: row;
    margin-left: 0px;
    margin-right: 0px;
+  }
+
+  .pop a {
+    flex: 33%;
   }
 
   .les_plus_populaires {
