@@ -1098,7 +1098,7 @@ figure.nature p {
   }
 }
 
-/* Sous chrome 667.01 est arrondi à 667 alors que Firefox il arrondit pas les valeurs*/
+
 @media only screen and (min-width: 668px ) and  (max-width: 767.98px) { 
 
   body {
@@ -1126,9 +1126,28 @@ figure.nature p {
     padding: 5px 0 0 5px;
   }
 
+  .trouver {
+    padding-top: 10px;
+  }
+
+  .barderecherche {
+    padding-top: 10px;
+  }
+
+  .filtres  {
+    display: unset;
+  }
+
+  .filtres * {
+    margin-top: 5px;
+  }
+
   .icones {
     display: flex;
+    padding-top: 5px;
+    margin-left: 0;
   }
+
 
   .hebergements {
     width: 100%;
@@ -1420,8 +1439,26 @@ figure.nature p {
     padding: 5px 0 0 5px;
   }
 
+  .trouver {
+    padding-top: 10px;
+  }
+
+  .barderecherche {
+    padding-top: 10px;
+  }
+
+  .filtres  {
+    display: unset;
+  }
+
+  .filtres * {
+    margin-top: 5px;
+  }
+
   .icones {
     display: flex;
+    padding-top: 5px;
+    margin-left: 0;
   }
 
   .hebergements {
@@ -1645,6 +1682,14 @@ figure.nature p {
   }
 } 
 
+@media only screen  and (min-width: 1920px) { 
+
+  body {
+    margin: auto;
+    max-width: 1920px;
+  }
+  
+}
 
   
 
